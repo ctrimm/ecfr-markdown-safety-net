@@ -4,7 +4,7 @@ title: "7 CFR Part 225, Appendix C to Part 225 Appendix C to Part 225—Child Nu
 description: "Summer Food Service Program and Summer EBT (SUN Bucks): 7 CFR Part 225, Appendix C to Part 225; text in force since 2016-12-22. 1. The Child Nutrition (CN) Labeling Program is a voluntary technical assistance program administered by the Food and Nutrition Service (FNS) in conjunction with the Food Safety and Inspection Service (FSIS) and Agricultural Marketing Serv"
 resource: "https://www.ecfr.gov/current/title-7/part-225"
 tags: [summer-meals, summer-ebt, nutrition, title-7, part-225, cfr, regulation]
-timestamp: "2026-10-11T10:22:26Z"
+timestamp: "2026-10-11T18:04:32Z"
 citation: "7 CFR Part 225, Appendix C to Part 225"
 title_number: 7
 part: 225

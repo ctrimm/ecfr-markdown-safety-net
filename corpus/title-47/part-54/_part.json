@@ -1,11 +1,10 @@
 {
  "title": "47",
  "part": "54",
- "current": "2026-10-07",
- "as_of": [
-  "2024-06-01"
- ],
+ "current": "2026-10-08",
+ "as_of": [],
+ "since": "2024-01-01",
  "program": "Lifeline (FCC Universal Service low-income program)",
- "files": 308,
- "retrieved": "2026-10-11T10:24:53Z"
+ "files": 457,
+ "retrieved": "2026-10-11T18:14:10Z"
 }

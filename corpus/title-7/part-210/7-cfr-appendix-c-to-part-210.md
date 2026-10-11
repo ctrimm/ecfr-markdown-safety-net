@@ -4,7 +4,7 @@ title: "7 CFR Part 210, Appendix C to Part 210 Appendix C to Part 210—Child Nu
 description: "National School Lunch and School Breakfast Programs, free and reduced-price eligibility: 7 CFR Part 210, Appendix C to Part 210; text in force since 2016-12-22. 1. The Child Nutrition (CN) Labeling Program is a voluntary technical assistance program administered by the Food and Nutrition Service in conjunction with the Food Safety and Inspection Service (FSIS), and Agricultural Marketing Service ("
 resource: "https://www.ecfr.gov/current/title-7/part-210"
 tags: [school-meals, nutrition, title-7, part-210, cfr, regulation]
-timestamp: "2026-10-11T10:22:05Z"
+timestamp: "2026-10-11T18:03:35Z"
 citation: "7 CFR Part 210, Appendix C to Part 210"
 title_number: 7
 part: 210

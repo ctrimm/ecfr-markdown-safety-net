@@ -4,7 +4,7 @@ title: "7 CFR Part 225, Appendix A to Part 225 Appendix A to Part 225—Alternat
 description: "Summer Food Service Program and Summer EBT (SUN Bucks): 7 CFR Part 225, Appendix A to Part 225; text in force since 2016-12-22. Alternate Protein Products A. What Are the Criteria for Alternate Protein Products Used in the Summer Food Service Program? 1. An alternate protein product used in meals planned under the provisions in § 225.16 must meet all of the criteri"
 resource: "https://www.ecfr.gov/current/title-7/part-225"
 tags: [summer-meals, summer-ebt, nutrition, title-7, part-225, cfr, regulation]
-timestamp: "2026-10-11T10:22:26Z"
+timestamp: "2026-10-11T18:04:32Z"
 citation: "7 CFR Part 225, Appendix A to Part 225"
 title_number: 7
 part: 225

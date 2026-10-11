@@ -7,7 +7,7 @@ title: Index of title-7/part-245
 - [7 CFR 245.1 General purpose and scope](7-cfr-245-1.md)
 - [7 CFR 245.10 Action by local educational agencies](7-cfr-245-10.md)
 - [7 CFR 245.11 Second review of applications](7-cfr-245-11.md)
-- [7 CFR 245.12 Action by State agencies and FNSROs (version in force 2024-06-01)](7-cfr-245-12--as-of-2024-06-01.md)
+- [7 CFR 245.12 Action by State agencies and FNSROs (version in force 2024-01-01)](7-cfr-245-12--as-of-2024-01-01.md)
 - [7 CFR 245.12 Action by State agencies and FNSROs](7-cfr-245-12.md)
 - [7 CFR 245.13 State agencies and direct certification requirements](7-cfr-245-13.md)
 - [7 CFR 245.14 Fraud penalties](7-cfr-245-14.md)

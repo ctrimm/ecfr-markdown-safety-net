@@ -1,11 +1,10 @@
 {
  "title": "45",
  "part": "263",
- "current": "2026-10-07",
- "as_of": [
-  "2024-06-01"
- ],
+ "current": "2026-10-08",
+ "as_of": [],
+ "since": "2024-01-01",
  "program": "Temporary Assistance for Needy Families (TANF)",
- "files": 21,
- "retrieved": "2026-10-11T10:23:23Z"
+ "files": 31,
+ "retrieved": "2026-10-11T18:07:17Z"
 }

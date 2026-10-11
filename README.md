@@ -36,18 +36,18 @@ effective_to: ""
 
 The front matter follows Google Cloud's **Open Knowledge Format (OKF) v0.1** (`type` required; `title`, `description`, `resource`, `tags`, `timestamp` optional), plus a few extensions: `citation`, `title_number`, `part`, `subpart`, `effective_from`, `effective_to`.
 
-**Effective dates.** Every current file says when its text took effect (the section's latest amendment). If you export with `--as-of 2024-06-01`, you also get the text that was in force on that date, but only for sections whose text has changed since; those files are named `...--as-of-2024-06-01.md` and carry `effective_to`. Together they answer "what did the rule say on date X?"
+**Effective dates.** Every current file says when its text took effect (the section's latest amendment). Export with `--since 2024-01-01` to also get every earlier version in force at any time since that date: one file per version, named `...--as-of-<date it took effect>.md` (or `--as-of-<since>` for the version already in force then), with `effective_from` and `effective_to` (its last day in force). The versions chain without gaps, so together they answer "what did the rule say on date X?" for any date since. `--as-of <date>` writes just the version in force on one date, where it differs from today's text. The bundled `corpus/` is exported with `--since 2024-01-01`.
 
 ## Use it
 
 ```bash
 pip install -e .            # or: python3 -m ecfr_markdown ...
 
-# one part, current text, plus the mid-2024 version where it differs
-ecfr-md part --title 7 --part 273 --out out/ --as-of 2024-06-01
+# one part: current text plus every version in force since 2024
+ecfr-md part --title 7 --part 273 --out out/ --since 2024-01-01
 
-# every program in a catalog, then index.md files and manifest.json
-ecfr-md catalog programs.json --out corpus/ --as-of 2024-06-01
+# every program in a catalog, with every version since 2024, then index.md files and manifest.json
+ecfr-md catalog programs.json --out corpus/ --since 2024-01-01
 
 # rebuild indexes after editing
 ecfr-md index corpus/

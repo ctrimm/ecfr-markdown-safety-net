@@ -4,7 +4,7 @@ title: "20 CFR Part 416, Appendix to Subpart K of Part 416 Appendix to Subpart K
 description: "Supplemental Security Income (SSI): 20 CFR Part 416, Appendix to Subpart K of Part 416 (Subpart K—Income); text in force since 2016-12-19. Many Federal statutes in addition to the Social Security Act provide assistance or benefits for individuals and specify that the assistance or benefit will not be considered in deciding eligibility for SSI. We have listed these statutes in"
 resource: "https://www.ecfr.gov/current/title-20/part-416"
 tags: [ssi, cash-assistance, title-20, part-416, cfr, regulation]
-timestamp: "2026-10-11T10:24:14Z"
+timestamp: "2026-10-11T18:11:37Z"
 citation: "20 CFR Part 416, Appendix to Subpart K of Part 416"
 title_number: 20
 part: 416

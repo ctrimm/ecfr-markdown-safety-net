@@ -41,17 +41,19 @@ def main(argv=None) -> int:
     p.add_argument("--title", required=True); p.add_argument("--part", required=True)
     p.add_argument("--out", required=True); p.add_argument("--date", default=None)
     p.add_argument("--as-of", action="append", default=[]); p.add_argument("--program", default="")
+    p.add_argument("--since", default=None, help="also write every version in force since this date")
     p.add_argument("--flat", action="store_true", help="write files directly into --out")
     c = sub.add_parser("catalog", help="export every part listed in a catalog JSON")
     c.add_argument("catalog"); c.add_argument("--out", required=True); c.add_argument("--as-of", action="append", default=[])
     c.add_argument("--only", default="", help="comma-separated program keys")
+    c.add_argument("--since", default=None, help="also write every version in force since this date")
     i = sub.add_parser("index", help="write index.md files and manifest.json")
     i.add_argument("root")
     a = ap.parse_args(argv)
     cl = Client()
     if a.cmd == "part":
         w = export_part(cl, a.title, a.part, Path(a.out), a.date, tuple(a.as_of), a.program,
-                        layout="flat" if a.flat else "nested")
+                        layout="flat" if a.flat else "nested", since=a.since)
         print(f"wrote {len(w)} files")
     elif a.cmd == "catalog":
         cat = json.loads(Path(a.catalog).read_text())
@@ -63,7 +65,7 @@ def main(argv=None) -> int:
                 for part in parts:
                     try:
                         w = export_part(cl, title, str(part), Path(a.out), None, tuple(a.as_of), prog["name"],
-                                        tags=tuple(prog.get("tags", [key])))
+                                        tags=tuple(prog.get("tags", [key])), since=a.since)
                         print(f"{key}: {title} CFR {part}: {len(w)} files", flush=True)
                     except Exception as e:  # keep going; report
                         print(f"{key}: {title} CFR {part}: FAILED {e}", file=sys.stderr, flush=True)

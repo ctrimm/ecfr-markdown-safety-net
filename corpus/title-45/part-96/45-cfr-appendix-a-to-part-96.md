@@ -4,7 +4,7 @@ title: "45 CFR Part 96, Appendix A to Part 96 Appendix A to Part 96—Uniform De
 description: "LIHEAP and other HHS block grants: 45 CFR Part 96, Appendix A to Part 96; text in force since 2016-12-30. 1. Adoption Services 2. Case Management Services 3. Congregate Meals 4. Counseling Services 5. Day Care Services—Adults 6. Day Care Services—Children 7. Education and Training Services 8. Employment Services 9. Family Planning Services 10."
 resource: "https://www.ecfr.gov/current/title-45/part-96"
 tags: [liheap, energy-assistance, block-grants, title-45, part-96, cfr, regulation]
-timestamp: "2026-10-11T10:23:36Z"
+timestamp: "2026-10-11T18:08:15Z"
 citation: "45 CFR Part 96, Appendix A to Part 96"
 title_number: 45
 part: 96

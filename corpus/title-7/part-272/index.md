@@ -18,6 +18,7 @@ title: Index of title-7/part-272
 - [7 CFR 272.3 Operating guidelines and forms](7-cfr-272-3.md)
 - [7 CFR 272.4 Program administration and personnel requirements](7-cfr-272-4.md)
 - [7 CFR 272.5 Program informational activities](7-cfr-272-5.md)
+- [7 CFR 272.6 Nondiscrimination compliance (version in force 2024-01-01)](7-cfr-272-6--as-of-2024-01-01.md)
 - [7 CFR 272.6 Nondiscrimination compliance](7-cfr-272-6.md)
 - [7 CFR 272.7 Procedures for program administration in Alaska](7-cfr-272-7.md)
 - [7 CFR 272.8 State income and eligibility verification system](7-cfr-272-8.md)

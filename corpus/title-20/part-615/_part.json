@@ -1,11 +1,10 @@
 {
  "title": "20",
  "part": "615",
- "current": "2026-10-07",
- "as_of": [
-  "2024-06-01"
- ],
+ "current": "2026-10-08",
+ "as_of": [],
+ "since": "2024-01-01",
  "program": "Unemployment compensation (federal-state UI requirements)",
  "files": 15,
- "retrieved": "2026-10-11T10:24:29Z"
+ "retrieved": "2026-10-11T18:12:51Z"
 }

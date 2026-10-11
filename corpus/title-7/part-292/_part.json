@@ -2,10 +2,9 @@
  "title": "7",
  "part": "292",
  "current": "2026-10-08",
- "as_of": [
-  "2024-06-01"
- ],
+ "as_of": [],
+ "since": "2024-01-01",
  "program": "Summer Food Service Program and Summer EBT (SUN Bucks)",
- "files": 31,
- "retrieved": "2026-10-11T10:22:32Z"
+ "files": 32,
+ "retrieved": "2026-10-11T18:04:58Z"
 }

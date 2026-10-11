@@ -5,12 +5,13 @@ title: Index of title-7/part-292
 
 
 - [7 CFR 292.1 General purpose and scope](7-cfr-292-1.md)
-- [7 CFR 292.10 Coordinated Services Plan (version in force 2024-06-01)](7-cfr-292-10--as-of-2024-06-01.md)
+- [7 CFR 292.10 Coordinated Services Plan (version in force 2024-01-01)](7-cfr-292-10--as-of-2024-01-01.md)
+- [7 CFR 292.10 Coordinated Services Plan (version in force 2025-06-06)](7-cfr-292-10--as-of-2025-06-06.md)
 - [7 CFR 292.11 Advance Planning Document (APD) processes](7-cfr-292-11.md)
 - [7 CFR 292.12 Enrolling eligible children](7-cfr-292-12.md)
-- [7 CFR 292.13 Application requirements (version in force 2024-06-01)](7-cfr-292-13--as-of-2024-06-01.md)
+- [7 CFR 292.13 Application requirements (version in force 2024-01-01)](7-cfr-292-13--as-of-2024-01-01.md)
 - [7 CFR 292.13 Application requirements](7-cfr-292-13.md)
-- [7 CFR 292.14 Verification requirements (version in force 2024-06-01)](7-cfr-292-14--as-of-2024-06-01.md)
+- [7 CFR 292.14 Verification requirements (version in force 2024-01-01)](7-cfr-292-14--as-of-2024-01-01.md)
 - [7 CFR 292.14 Verification requirements](7-cfr-292-14.md)
 - [7 CFR 292.15 General standards](7-cfr-292-15.md)
 - [7 CFR 292.16 Issuance and adjustment requirements specific to States that administer SNAP](7-cfr-292-16.md)

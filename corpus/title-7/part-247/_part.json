@@ -2,10 +2,9 @@
  "title": "7",
  "part": "247",
  "current": "2026-10-08",
- "as_of": [
-  "2024-06-01"
- ],
+ "as_of": [],
+ "since": "2024-01-01",
  "program": "TEFAP, CSFP and FDPIR (USDA Foods programs)",
- "files": 55,
- "retrieved": "2026-10-11T10:22:43Z"
+ "files": 75,
+ "retrieved": "2026-10-11T18:05:36Z"
 }

@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from .client import Client
@@ -40,6 +40,11 @@ def section_dates(versions: list[dict]) -> dict[str, list[str]]:
     for v in versions:
         out.setdefault(v.get("identifier", ""), set()).add(v["date"])
     return {k: sorted(v) for k, v in out.items()}
+
+
+def day_before(d: str) -> str:
+    """effective_to is the last day a version was in force: the day before the next version starts."""
+    return (date.fromisoformat(d) - timedelta(days=1)).isoformat() if d else ""
 
 
 def unit_doc(u: Unit, title: str, date_from: str, date_to: str, as_of: str | None, program: str = "",
@@ -71,8 +76,14 @@ def unit_doc(u: Unit, title: str, date_from: str, date_to: str, as_of: str | Non
 
 
 def export_part(client: Client, title: str, part: str, out: Path, current: str | None = None,
-                as_of: tuple[str, ...] = (), program: str = "", tags: tuple = (), layout: str = "nested") -> list[Path]:
-    """Write the part's current sections and any differing earlier versions. Returns written paths."""
+                as_of: tuple[str, ...] = (), program: str = "", tags: tuple = (), layout: str = "nested",
+                since: str | None = None) -> list[Path]:
+    """Write the part's current sections and earlier versions. Returns written paths.
+
+    as_of: write the version in force on each date, where it differs from the current text.
+    since: write every distinct version in force at any time from that date on (each version once,
+    named --as-of-<date it took effect>, or --as-of-<since> for the version already in force then).
+    """
     current = current or client.latest_date(title)
     dates = section_dates(client.versions(title, part))
     raw = client.full_xml(title, current, part)
@@ -85,16 +96,28 @@ def export_part(client: Client, title: str, part: str, out: Path, current: str |
         hist = [x for x in dates.get(n, []) if x <= current]
         stem, text = unit_doc(u, title, hist[-1] if hist else "", "", None, program, tags, retrieved)
         (d / f"{stem}.md").write_text(text); written.append(d / f"{stem}.md")
-    for when in as_of:
+    done: set[tuple[str, str]] = set()  # (section, version start) already written
+
+    def write_version(u: Unit, when: str) -> None:
+        if u.number in cur and cur[u.number].markdown == u.markdown:
+            return
+        hist = dates.get(u.number, [])
+        frm = max([x for x in hist if x <= when], default="")
+        nxt = min([x for x in hist if x > when], default="")
+        if (u.number, frm) in done:
+            return
+        done.add((u.number, frm))
+        stem, text = unit_doc(u, title, frm, day_before(nxt), when, program, tags, retrieved)
+        (d / f"{stem}.md").write_text(text); written.append(d / f"{stem}.md")
+
+    query_dates = list(as_of)
+    if since:
+        starts = sorted({x for hist in dates.values() for x in hist if since < x < current})
+        query_dates += [since] + starts
+    for when in sorted(set(query_dates)):
         for u in iter_units(client.full_xml(title, when, part), title):
-            if u.number in cur and cur[u.number].markdown == u.markdown:
-                continue
-            hist = dates.get(u.number, [])
-            frm = max([x for x in hist if x <= when], default="")
-            nxt = min([x for x in hist if x > when], default="")
-            stem, text = unit_doc(u, title, frm, nxt, when, program, tags, retrieved)
-            (d / f"{stem}.md").write_text(text); written.append(d / f"{stem}.md")
-    meta = {"title": title, "part": part, "current": current, "as_of": list(as_of), "program": program,
+            write_version(u, when)
+    meta = {"title": title, "part": part, "current": current, "as_of": list(as_of), "since": since, "program": program,
             "files": len(written), "retrieved": retrieved}
     (d / "_part.json").write_text(json.dumps(meta, indent=1))
     return written
