@@ -1,0 +1,37 @@
+---
+type: Index
+title: Index of title-7/part-292
+---
+
+
+- [7 CFR 292.1 General purpose and scope](7-cfr-292-1.md)
+- [7 CFR 292.10 Coordinated Services Plan (version in force 2024-06-01)](7-cfr-292-10--as-of-2024-06-01.md)
+- [7 CFR 292.11 Advance Planning Document (APD) processes](7-cfr-292-11.md)
+- [7 CFR 292.12 Enrolling eligible children](7-cfr-292-12.md)
+- [7 CFR 292.13 Application requirements (version in force 2024-06-01)](7-cfr-292-13--as-of-2024-06-01.md)
+- [7 CFR 292.13 Application requirements](7-cfr-292-13.md)
+- [7 CFR 292.14 Verification requirements (version in force 2024-06-01)](7-cfr-292-14--as-of-2024-06-01.md)
+- [7 CFR 292.14 Verification requirements](7-cfr-292-14.md)
+- [7 CFR 292.15 General standards](7-cfr-292-15.md)
+- [7 CFR 292.16 Issuance and adjustment requirements specific to States that administer SNAP](7-cfr-292-16.md)
+- [7 CFR 292.17 Retailer integrity requirements specific to States that administer SNAP](7-cfr-292-17.md)
+- [7 CFR 292.18 Requirements specific to States that administer Nutrition Assistance Program (NAP) programs](7-cfr-292-18.md)
+- [7 CFR 292.19 Requirements specific to ITO Summer EBT agencies](7-cfr-292-19.md)
+- [7 CFR 292.2 Definitions](7-cfr-292-2.md)
+- [7 CFR 292.20 Payments to Summer EBT agencies and use of administrative program funds](7-cfr-292-20.md)
+- [7 CFR 292.21 Standards for financial management systems](7-cfr-292-21.md)
+- [7 CFR 292.22 Performance criteria](7-cfr-292-22.md)
+- [7 CFR 292.23 Records and reports](7-cfr-292-23.md)
+- [7 CFR 292.24 Audits and management control evaluations](7-cfr-292-24.md)
+- [7 CFR 292.25 Investigations](7-cfr-292-25.md)
+- [7 CFR 292.26 Hearing procedure for families and Summer EBT agencies](7-cfr-292-26.md)
+- [7 CFR 292.27 Claims](7-cfr-292-27.md)
+- [7 CFR 292.28 Procurement standards](7-cfr-292-28.md)
+- [7 CFR 292.29 Miscellaneous administrative provisions](7-cfr-292-29.md)
+- [7 CFR 292.3 Administration](7-cfr-292-3.md)
+- [7 CFR 292.30 Severability](7-cfr-292-30.md)
+- [7 CFR 292.5 General purpose and scope](7-cfr-292-5.md)
+- [7 CFR 292.6 Eligibility](7-cfr-292-6.md)
+- [7 CFR 292.7 Period to establish eligibility](7-cfr-292-7.md)
+- [7 CFR 292.8 Plan for Operations and Management](7-cfr-292-8.md)
+- [7 CFR 292.9 Coordination between State-administered and ITO-administered Summer EBT Programs](7-cfr-292-9.md)
