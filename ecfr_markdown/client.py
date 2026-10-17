@@ -52,8 +52,17 @@ class Client:
         raise KeyError(f"title {title} not found")
 
     def versions(self, title: int | str, part: str) -> list[dict]:
-        """Every amendment of every section in the part: [{identifier, date, ...}]."""
-        return json.loads(self._get(f"versions/title-{title}.json", {"part": part}))["content_versions"]
+        """Every amendment of every section in the part: [{identifier, date, ...}].
+
+        The endpoint pages at 1,000 results (large parts like 20 CFR 416 have more), so read every page.
+        """
+        out, page, pages = [], 1, 1
+        while page <= pages:
+            r = json.loads(self._get(f"versions/title-{title}.json", {"part": part, "page": page}))
+            out += r["content_versions"]
+            pages = int(r.get("meta", {}).get("total_pages") or 1)
+            page += 1
+        return out
 
     def full_xml(self, title: int | str, date: str, part: str) -> bytes:
         """The part's full text as eCFR XML on `date` (YYYY-MM-DD)."""

@@ -2,7 +2,8 @@
 
 Output layout (default): <out>/title-<T>/part-<P>/<T>-cfr-<section>.md, plus
 <T>-cfr-<section>--as-of-<date>.md for each earlier version that differs from
-the current text. Every file opens with YAML front matter (Open Knowledge
+the current text. In the nested layout the part directory belongs to the export:
+section files it did not write this time are removed. Every file opens with YAML front matter (Open Knowledge
 Format v0.1 style: `type` plus title, description, resource, tags,
 timestamp; extensions: citation, title_number, part, subpart,
 effective_from, effective_to, retrieved).
@@ -33,6 +34,18 @@ def front_matter(fm: dict) -> str:
 
 def slug(s: str) -> str:
     return re.sub(r"-{2,}", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")
+
+
+def _same_but_timestamp(a: str, b: str) -> bool:
+    drop = lambda t: [ln for ln in t.splitlines() if not ln.startswith("timestamp: ")]
+    return drop(a) == drop(b)
+
+
+def write_doc(path: Path, text: str) -> None:
+    """Write UTF-8, but leave the file alone when only its timestamp would change (keeps re-exports diff-clean)."""
+    if path.exists() and _same_but_timestamp(path.read_text(encoding="utf-8"), text):
+        return
+    path.write_text(text, encoding="utf-8")
 
 
 def section_dates(versions: list[dict]) -> dict[str, list[str]]:
@@ -95,7 +108,7 @@ def export_part(client: Client, title: str, part: str, out: Path, current: str |
     for n, u in cur.items():
         hist = [x for x in dates.get(n, []) if x <= current]
         stem, text = unit_doc(u, title, hist[-1] if hist else "", "", None, program, tags, retrieved)
-        (d / f"{stem}.md").write_text(text); written.append(d / f"{stem}.md")
+        write_doc(d / f"{stem}.md", text); written.append(d / f"{stem}.md")
     done: set[tuple[str, str]] = set()  # (section, version start) already written
 
     def write_version(u: Unit, when: str) -> None:
@@ -108,7 +121,7 @@ def export_part(client: Client, title: str, part: str, out: Path, current: str |
             return
         done.add((u.number, frm))
         stem, text = unit_doc(u, title, frm, day_before(nxt), when, program, tags, retrieved)
-        (d / f"{stem}.md").write_text(text); written.append(d / f"{stem}.md")
+        write_doc(d / f"{stem}.md", text); written.append(d / f"{stem}.md")
 
     query_dates = list(as_of)
     if since:
@@ -117,7 +130,12 @@ def export_part(client: Client, title: str, part: str, out: Path, current: str |
     for when in sorted(set(query_dates)):
         for u in iter_units(client.full_xml(title, when, part), title):
             write_version(u, when)
+    if layout == "nested":  # the part directory is ours: drop files from earlier exports that no longer apply
+        keep = set(written)
+        for old in d.glob(f"{title}-cfr-*.md"):
+            if old not in keep:
+                old.unlink()
     meta = {"title": title, "part": part, "current": current, "as_of": list(as_of), "since": since, "program": program,
             "files": len(written), "retrieved": retrieved}
-    (d / "_part.json").write_text(json.dumps(meta, indent=1))
+    (d / "_part.json").write_text(json.dumps(meta, indent=1), encoding="utf-8")
     return written

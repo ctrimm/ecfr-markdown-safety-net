@@ -14,6 +14,7 @@ import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
 
 _WS = re.compile(r"[ \t\r\n]+")
+FIGURE_NOTE = "*[A formula or figure appears here in the official text; see the source link.]*"
 
 
 @dataclass
@@ -79,6 +80,8 @@ def blocks(el: ET.Element, depth: int = 0) -> list[str]:
             t = inline(ch).strip()
             if t:
                 out.append(t)
+            if any(x.tag in ("MATH", "img", "GPH") for x in ch.iter()):
+                out.append(FIGURE_NOTE)
         elif tag in ("HD1", "HD2", "HD3", "HED", "HD"):
             t = inline(ch).strip()
             if t:
@@ -106,7 +109,7 @@ def blocks(el: ET.Element, depth: int = 0) -> list[str]:
             if t:
                 out.append(f"[Footnote] {t}")
         elif tag in ("MATH", "img", "GPH") or ch.find(".//img") is not None or ch.find(".//MATH") is not None:
-            out.append("*[A formula or figure appears here in the official text; see the source link.]*")
+            out.append(FIGURE_NOTE)
         elif tag == "PSPACE" or tag.startswith("PSPACE"):
             t = inline(ch).strip()
             if t:

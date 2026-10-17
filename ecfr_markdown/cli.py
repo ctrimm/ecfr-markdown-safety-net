@@ -1,7 +1,7 @@
 """ecfr-md: export eCFR regulations to Markdown.
 
-  ecfr-md part --title 7 --part 273 --out out/ [--date 2026-10-08] [--as-of 2024-06-01]
-  ecfr-md catalog programs.json --out corpus/ [--as-of 2024-06-01]
+  ecfr-md part --title 7 --part 273 --out out/ [--date 2026-10-08] [--since 2024-01-01] [--as-of 2024-06-01]
+  ecfr-md catalog programs.json --out corpus/ [--since 2024-01-01] [--only snap,wic]
   ecfr-md index corpus/          # write index.md per directory + manifest.json
 """
 from __future__ import annotations
@@ -15,6 +15,11 @@ from .client import Client
 from .export import export_part, front_matter
 
 
+def _unquote(v: str) -> str:
+    """Undo export._yaml's double-quoting (it only escapes backslashes and quotes, a subset of JSON)."""
+    return json.loads(v) if len(v) > 1 and v[0] == v[-1] == '"' else v
+
+
 def build_index(root: Path) -> dict:
     """index.md (type: Index) per directory and a manifest.json of every document."""
     manifest = []
@@ -23,14 +28,16 @@ def build_index(root: Path) -> dict:
         subs = sorted(p for p in d.iterdir() if p.is_dir())
         if not docs and not subs:
             continue
-        lines = [front_matter({"type": "Index", "title": f"Index of {d.relative_to(root) or 'corpus'}"}), ""]
+        rel = d.relative_to(root).as_posix()
+        lines = [front_matter({"type": "Index", "title": f"Index of {'corpus' if rel == '.' else rel}"}), ""]
         lines += [f"- [{s.name}/]({s.name}/index.md)" for s in subs]
         for p in docs:
-            title = next((ln[7:].strip().strip('"') for ln in p.read_text().splitlines()[:6] if ln.startswith("title: ")), p.stem)
+            title = next((_unquote(ln[7:].strip()) for ln in p.read_text(encoding="utf-8").splitlines()[:6]
+                          if ln.startswith("title: ")), p.stem)
             lines.append(f"- [{title}]({p.name})")
-            manifest.append({"path": str(p.relative_to(root)), "title": title})
-        (d / "index.md").write_text("\n".join(lines) + "\n")
-    (root / "manifest.json").write_text(json.dumps(manifest, indent=1))
+            manifest.append({"path": p.relative_to(root).as_posix(), "title": title})
+        (d / "index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (root / "manifest.json").write_text(json.dumps(manifest, indent=1), encoding="utf-8")
     return {"documents": len(manifest)}
 
 
@@ -56,7 +63,7 @@ def main(argv=None) -> int:
                         layout="flat" if a.flat else "nested", since=a.since)
         print(f"wrote {len(w)} files")
     elif a.cmd == "catalog":
-        cat = json.loads(Path(a.catalog).read_text())
+        cat = json.loads(Path(a.catalog).read_text(encoding="utf-8"))
         only = set(filter(None, a.only.split(",")))
         for key, prog in cat["programs"].items():
             if only and key not in only:

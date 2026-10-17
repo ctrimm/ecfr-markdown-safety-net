@@ -34,6 +34,10 @@ class RenderTests(unittest.TestCase):
         self.assertIn("> Source: [81 FR 100, Jan. 1, 2016]", md)
         self.assertIn("| x \\| y | z |", self.units["999.2"].markdown)
 
+    def test_formula_inside_paragraph_gets_a_note(self):
+        self.assertIn("official text; see the source link.", self.units["999.2"].markdown)
+        self.assertNotIn("official text", self.units["999.1"].markdown)
+
     def test_versions_and_front_matter(self):
         dates = section_dates([{"identifier": "999.1", "date": "2020-01-01"}, {"identifier": "999.1", "date": "2024-11-18"}])
         self.assertEqual(dates["999.1"], ["2020-01-01", "2024-11-18"])

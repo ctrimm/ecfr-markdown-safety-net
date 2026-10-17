@@ -53,6 +53,8 @@ ecfr-md catalog programs.json --out corpus/ --since 2024-01-01
 ecfr-md index corpus/
 ```
 
+Re-running an export is safe and diff-friendly: a file whose text hasn't changed is left untouched (its `timestamp` isn't bumped), and in the default nested layout each part directory is treated as the export's own, so section files that no longer apply (a section removed from the CFR, an old version that's no longer needed) are deleted.
+
 From Python:
 
 ```python
