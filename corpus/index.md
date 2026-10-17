@@ -1,6 +1,6 @@
 ---
 type: Index
-title: Index of .
+title: Index of corpus
 ---
 
 
