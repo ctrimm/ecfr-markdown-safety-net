@@ -1,0 +1,18 @@
+<DIV5 N="999" TYPE="PART"><HEAD>PART 999—EXAMPLE PROGRAM</HEAD>
+<DIV6 N="A" TYPE="SUBPART"><HEAD>Subpart A—General</HEAD>
+<DIV8 N="999.1" TYPE="SECTION"><HEAD>§ 999.1 Definitions.</HEAD>
+<P>(a) <I>Household</I> means a group of people who buy food together.</P>
+<P>(b) Income is counted <E T="03">monthly</E>, see footnote.<FTREF>1</FTREF></P>
+<GPOTABLE><BOXHD><CHED>Size</CHED><CHED>Limit</CHED></BOXHD><ROW><ENT>1</ENT><ENT>$1,000</ENT></ROW><ROW><ENT>2</ENT><ENT>$1,400</ENT></ROW></GPOTABLE>
+<EXTRACT><P>Quoted text.</P></EXTRACT>
+<FTNT><P>1 Footnote text.</P></FTNT>
+<CITA>[81 FR 100, Jan. 1, 2016]</CITA>
+</DIV8>
+<DIV7 TYPE="SUBJGRP"><HEAD>Eligibility</HEAD>
+<DIV8 N="999.2" TYPE="SECTION"><HEAD>§ 999.2 Income limits.</HEAD>
+<P>Limits are in the table.</P><P>The limit is computed as <MATH>L = 1.3P</MATH></P><TABLE><TR><TH>A</TH><TH>B</TH></TR><TR><TD>x | y</TD><TD>z</TD></TR></TABLE>
+</DIV8>
+<DIV8 N="999.3" TYPE="SECTION"><HEAD>§ 999.3 [Reserved]</HEAD></DIV8>
+</DIV7></DIV6>
+<DIV9 N="Appendix A to Part 999" TYPE="APPENDIX"><HEAD>Appendix A to Part 999—Tables</HEAD><P>Appendix text.</P></DIV9>
+</DIV5>

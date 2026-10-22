@@ -1,0 +1,31 @@
+{
+  "description": "Federal safety-net and benefit programs and the CFR parts that hold their rules. Edit freely; `ecfr-md catalog programs.json --out corpus/` exports every part.",
+  "programs": {
+    "snap": {"name": "Supplemental Nutrition Assistance Program (SNAP)", "realm": "benefits", "tags": ["snap", "nutrition"],
+             "cfr": {"7": [271, 272, 273, 274, 275, 276, 277]}},
+    "wic": {"name": "WIC (Special Supplemental Nutrition Program for Women, Infants, and Children)", "realm": "benefits", "tags": ["wic", "nutrition"],
+            "cfr": {"7": [246]}},
+    "school-meals": {"name": "National School Lunch and School Breakfast Programs, free and reduced-price eligibility", "realm": "benefits", "tags": ["school-meals", "nutrition"],
+                     "cfr": {"7": [210, 220, 245]}},
+    "summer-meals": {"name": "Summer Food Service Program and Summer EBT (SUN Bucks)", "realm": "benefits", "tags": ["summer-meals", "summer-ebt", "nutrition"],
+                     "cfr": {"7": [225, 292]}},
+    "cacfp": {"name": "Child and Adult Care Food Program", "realm": "benefits", "tags": ["cacfp", "nutrition"], "cfr": {"7": [226]}},
+    "commodity-programs": {"name": "TEFAP, CSFP and FDPIR (USDA Foods programs)", "realm": "benefits", "tags": ["tefap", "csfp", "fdpir", "nutrition"],
+                           "cfr": {"7": [247, 251, 253]}},
+    "tanf": {"name": "Temporary Assistance for Needy Families (TANF)", "realm": "benefits", "tags": ["tanf", "cash-assistance"],
+             "cfr": {"45": [260, 261, 262, 263, 264, 265]}},
+    "liheap-block-grants": {"name": "LIHEAP and other HHS block grants", "realm": "benefits", "tags": ["liheap", "energy-assistance", "block-grants"],
+                            "cfr": {"45": [96]}},
+    "child-care": {"name": "Child Care and Development Fund (CCDF)", "realm": "benefits", "tags": ["ccdf", "child-care"], "cfr": {"45": [98]}},
+    "medicaid-chip": {"name": "Medicaid and CHIP eligibility", "realm": "healthcare", "tags": ["medicaid", "chip"],
+                      "cfr": {"42": [431, 435, 457]}},
+    "ssi": {"name": "Supplemental Security Income (SSI)", "realm": "benefits", "tags": ["ssi", "cash-assistance"], "cfr": {"20": [416]}},
+    "medicare-extra-help": {"name": "Medicare Part D low-income subsidy (Extra Help)", "realm": "healthcare", "tags": ["medicare", "extra-help", "lis"],
+                            "cfr": {"20": [418]}},
+    "unemployment-insurance": {"name": "Unemployment compensation (federal-state UI requirements)", "realm": "labor", "tags": ["unemployment-insurance"],
+                               "cfr": {"20": [604, 615]}},
+    "housing": {"name": "Housing Choice Vouchers and HUD income rules", "realm": "benefits", "tags": ["housing", "section-8"],
+                "cfr": {"24": [5, 982]}},
+    "lifeline": {"name": "Lifeline (FCC Universal Service low-income program)", "realm": "benefits", "tags": ["lifeline", "telecom"], "cfr": {"47": [54]}}
+  }
+}
