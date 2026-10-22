@@ -1,0 +1,68 @@
+name: Weekly eCFR sync
+
+# Re-export the benefit-program catalog from the eCFR versioner API and open a
+# pull request when anything changed. No-change weeks end quietly: the export
+# is deterministic, so an identical tree means nothing moved upstream.
+# Merging a sync PR triggers a data rebuild in ctrimm/ecfr-mcp (see
+# notify-ecfr-mcp.yml in this repo and rebuild-data.yml in ecfr-mcp).
+
+on:
+  schedule:
+    - cron: "0 13 * * 1" # Mondays 13:00 UTC (8-9am ET)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ecfr-md
+        run: pip install -e .
+
+      - name: Re-export the catalog as a fresh mirror
+        run: |
+          rm -rf corpus
+          ecfr-md catalog programs.json --out corpus --since 2024-01-01 2>&1 | tee "$RUNNER_TEMP/export.log"
+          if grep -q "FAILED" "$RUNNER_TEMP/export.log"; then
+            echo "At least one part failed to export:"
+            grep "FAILED" "$RUNNER_TEMP/export.log"
+            exit 1
+          fi
+
+      - name: Summarize changes
+        id: diff
+        run: |
+          echo "date=$(date -u +%F)" >> "$GITHUB_OUTPUT"
+          git add -A corpus
+          echo "added=$(git diff --cached --name-only --diff-filter=A -- corpus | wc -l)" >> "$GITHUB_OUTPUT"
+          echo "modified=$(git diff --cached --name-only --diff-filter=M -- corpus | wc -l)" >> "$GITHUB_OUTPUT"
+          echo "deleted=$(git diff --cached --name-only --diff-filter=D -- corpus | wc -l)" >> "$GITHUB_OUTPUT"
+
+      - name: Open pull request
+        if: steps.diff.outputs.added != '0' || steps.diff.outputs.modified != '0' || steps.diff.outputs.deleted != '0'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Weekly eCFR sync ${{ steps.diff.outputs.date }}"
+          branch: sync/ecfr-${{ steps.diff.outputs.date }}
+          title: "Weekly eCFR sync — ${{ steps.diff.outputs.date }}"
+          body: |
+            Automated re-export of the benefit-program catalog (`programs.json`) from the eCFR versioner API, with every version in force since 2024-01-01.
+
+            Corpus changes in this sync:
+
+            - Files added: ${{ steps.diff.outputs.added }}
+            - Files modified: ${{ steps.diff.outputs.modified }}
+            - Files deleted: ${{ steps.diff.outputs.deleted }}
+
+            Review the diff before merging — this corpus is the source for ecfr-mcp's search index. Merging triggers an automatic data-rebuild PR in ctrimm/ecfr-mcp.
+          delete-branch: true
