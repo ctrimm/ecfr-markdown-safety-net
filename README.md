@@ -20,7 +20,7 @@ title: 7 CFR 273.9 Income and deductions
 description: "Supplemental Nutrition Assistance Program (SNAP): 7 CFR 273.9 (Subpart D—Eligibility and Benefit Levels); text in force since 2025-01-17. ..."
 resource: "https://www.ecfr.gov/current/title-7/section-273.9"
 tags: [snap, nutrition, title-7, part-273, cfr, regulation]
-timestamp: "2026-10-11T10:20:19Z"
+generated: {by: ecfr-markdown/0.2.0, at: "2025-01-17T00:00:00Z"}
 citation: 7 CFR 273.9
 title_number: 7
 part: 273
@@ -34,9 +34,15 @@ effective_to: ""
 (a) *Income eligibility standards.* Participation in the Program shall be limited to ...
 ```
 
-The front matter follows Google Cloud's **Open Knowledge Format (OKF) v0.1** (`type` required; `title`, `description`, `resource`, `tags`, `timestamp` optional), plus a few extensions: `citation`, `title_number`, `part`, `subpart`, `effective_from`, `effective_to`.
+The corpus is a bundle in Google Cloud's **[Open Knowledge Format (OKF) v0.2](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)**:
 
-**Effective dates.** Every current file says when its text took effect (the section's latest amendment). Export with `--since 2024-01-01` to also get every earlier version in force at any time since that date: one file per version, named `...--as-of-<date it took effect>.md` (or `--as-of-<since>` for the version already in force then), with `effective_from` and `effective_to` (its last day in force). The versions chain without gaps, so together they answer "what did the rule say on date X?" for any date since. `--as-of <date>` writes just the version in force on one date, where it differs from today's text. The bundled `corpus/` is exported with `--since 2024-01-01`.
+- **Standard keys:** `type` (required), `title`, `description`, `resource` and `tags`.
+- **`generated`:** `by` is this tool, in OKF's `<producer>/<version>` form. `at` is the day the version took effect: OKF defines it as the content's last meaningful change, and for a regulation that's the amendment.
+- **`status: deprecated`:** marks superseded versions (the `--as-of-` files). OKF defines it as "kept for links and history; no longer current". Current text omits it, which OKF reads as `stable`.
+- **Extension keys:** `citation`, `title_number`, `part`, `subpart`, `effective_from` and `effective_to`. OKF allows extra keys and has no point-in-time concept of its own.
+- **Index files:** `index.md` files follow OKF §8. They have no front matter, except `okf_version: "0.2"` on the bundle root, and list `* [Title](link) - description` entries under headings.
+
+**Effective dates.** Every current file says when its text took effect (the section's latest amendment). Export with `--since 2024-01-01` to also get every earlier version in force at any time since that date: one file per version, named `...--as-of-<date it took effect>.md` (or `--as-of-<since>` for the version already in force then), with `effective_from` and `effective_to` (its last day in force). Versions never overlap, so together they answer "what did the rule say on date X?" for any date since. A date can fall in a gap when a section was removed and later restored (42 CFR 457.960 was gone from 2024-06-03 to 2026-06-02). `--as-of <date>` writes just the version in force on one date, where it differs from today's text. The bundled `corpus/` is exported with `--since 2024-01-01`.
 
 ## Use it
 
@@ -53,7 +59,7 @@ ecfr-md catalog programs.json --out corpus/ --since 2024-01-01
 ecfr-md index corpus/
 ```
 
-Re-running an export is safe and diff-friendly: a file whose text hasn't changed is left untouched (its `timestamp` isn't bumped), and in the default nested layout each part directory is treated as the export's own, so section files that no longer apply (a section removed from the CFR, an old version that's no longer needed) are deleted.
+Exports are deterministic: the same eCFR data always produces byte-identical files, because nothing records a wall-clock time. A fresh re-export (what the weekly sync does) therefore changes only what changed upstream. In the default nested layout each part directory is treated as the export's own, so section files that no longer apply (a section removed from the CFR, an old version that's no longer needed) are deleted.
 
 From Python:
 
