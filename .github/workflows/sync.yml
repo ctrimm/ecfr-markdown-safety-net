@@ -3,8 +3,8 @@ name: Weekly eCFR sync
 # Re-export the benefit-program catalog from the eCFR versioner API and open a
 # pull request when anything changed. No-change weeks end quietly: the export
 # is deterministic, so an identical tree means nothing moved upstream.
-# Merging a sync PR triggers a data rebuild in ctrimm/ecfr-mcp (see
-# notify-ecfr-mcp.yml in this repo and rebuild-data.yml in ecfr-mcp).
+# Merging a sync PR triggers a data rebuild in ctrimm/ecfr-mcp-safety-net (see
+# notify-ecfr-mcp-safety-net.yml in this repo and rebuild-data.yml in ecfr-mcp-safety-net).
 
 on:
   schedule:
@@ -64,5 +64,5 @@ jobs:
             - Files modified: ${{ steps.diff.outputs.modified }}
             - Files deleted: ${{ steps.diff.outputs.deleted }}
 
-            Review the diff before merging — this corpus is the source for ecfr-mcp's search index. Merging triggers an automatic data-rebuild PR in ctrimm/ecfr-mcp.
+            Review the diff before merging — this corpus is the source for ecfr-mcp-safety-net's search index. Merging triggers an automatic data-rebuild PR in ctrimm/ecfr-mcp-safety-net.
           delete-branch: true
