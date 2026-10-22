@@ -1,21 +1,19 @@
----
-type: Index
-title: Index of title-20/part-615
----
+# Index of title-20/part-615
 
+## Documents
 
-- [20 CFR 615.1 Purpose](20-cfr-615-1.md)
-- [20 CFR 615.10 Special provisions for employers](20-cfr-615-10.md)
-- [20 CFR 615.11 Extended Benefit Periods](20-cfr-615-11.md)
-- [20 CFR 615.12 Determination of “on” and “off” indicators](20-cfr-615-12.md)
-- [20 CFR 615.13 Announcement of the beginning and ending of Extended Benefit Periods or High Unemployment Periods](20-cfr-615-13.md)
-- [20 CFR 615.14 Payments to States](20-cfr-615-14.md)
-- [20 CFR 615.15 Records and reports](20-cfr-615-15.md)
-- [20 CFR 615.2 Definitions](20-cfr-615-2.md)
-- [20 CFR 615.3 Effective period of the program](20-cfr-615-3.md)
-- [20 CFR 615.4 Eligibility requirements for Extended Benefits](20-cfr-615-4.md)
-- [20 CFR 615.5 Definition of “exhaustee.”](20-cfr-615-5.md)
-- [20 CFR 615.6 Extended Benefits; weekly amount](20-cfr-615-6.md)
-- [20 CFR 615.7 Extended Benefits; maximum amount](20-cfr-615-7.md)
-- [20 CFR 615.8 Provisions of State law applicable to claims](20-cfr-615-8.md)
-- [20 CFR 615.9 Restrictions on entitlement](20-cfr-615-9.md)
+* [20 CFR 615.1 Purpose](20-cfr-615-1.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.1; text in force since 2016-10-24. This part implements the “Federal-State Extended Unemployment Compensation Act of 1970” (EUCA). Under the Federal Unemployment Tax Act, 26 U.S.C. 3304(a)(11), an approved State law must provide for the payment of extended compensation to e
+* [20 CFR 615.10 Special provisions for employers](20-cfr-615-10.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.10; text in force since 2016-10-24. (a) Charging contributing employers. (1) Section 3303(a)(1) of the Internal Revenue Code of 1986 (26 U.S.C. 3303(a)(1)) does not require that Extended Benefits paid to an individual be charged to the experience rating accounts of employers
+* [20 CFR 615.11 Extended Benefit Periods](20-cfr-615-11.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.11; text in force since 2016-10-24. (a) Beginning date. Except as provided in paragraph (d) of this section, an extended benefit period or high unemployment period begins in a State on the first day of the third calendar week after a week for which there is a State “on” indi
+* [20 CFR 615.12 Determination of “on” and “off” indicators](20-cfr-615-12.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.12; text in force since 2016-10-24. (a) Standard State indicators. (1) There is a State “on” indicator in a State for a week if the head of the State agency determines, in accordance with this section, that, for the period consisting of that week and the immediately precedin
+* [20 CFR 615.13 Announcement of the beginning and ending of Extended Benefit Periods or High Unemployment Periods](20-cfr-615-13.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.13; text in force since 2016-10-24. (a) State indicators —(1) Extended benefit period. Upon receipt of a notice required by § 615.12(f) which the Department determines is acceptable, the Department will publish in the Federal Register a notice of the State agency head's dete
+* [20 CFR 615.14 Payments to States](20-cfr-615-14.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.14; text in force since 2016-10-24. (a) Sharable compensation. (1) The Department shall promptly upon receipt of a State's report of its expenditures for a calendar month reimburse the State in the amount of the sharable compensation the State is entitled to receive under EU
+* [20 CFR 615.15 Records and reports](20-cfr-615-15.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.15; text in force since 2016-10-24. (a) General. State agencies must furnish to the Secretary such information and reports and make such studies as the Secretary decides are necessary or appropriate for carrying out the purposes of this part. (b) Recordkeeping. Each State ag
+* [20 CFR 615.2 Definitions](20-cfr-615-2.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.2; text in force since 2016-10-24. For the purposes of the EUCA and this part— Additional compensation means compensation totally financed by a State and payable under a State law by reason of conditions of high unemployment or by reason of other special factors and, when s
+* [20 CFR 615.3 Effective period of the program](20-cfr-615-3.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.3; text in force since 2016-10-24. An Extended Benefit Program conforming with EUCA and this part shall be a requirement for a State law effective on and after January 1, 1972, pursuant to section 3304(a)(11) of the Internal Revenue Code of 1986, (26 U.S.C. 3304(a)(11)). Co
+* [20 CFR 615.4 Eligibility requirements for Extended Benefits](20-cfr-615-4.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.4; text in force since 2016-10-24. (a) General. An individual is entitled to Extended Benefits for a week of unemployment which begins in the individual's eligibility period if, with respect to such week, the individual is an exhaustee as defined in § 615.5, files a timely
+* [20 CFR 615.5 Definition of “exhaustee.”](20-cfr-615-5.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.5; text in force since 2016-10-24. (a)(1) “Exhaustee” means an individual who, with respect to any week of unemployment in the individual's eligibility period: (i) Has received, prior to such week, all of the regular compensation that was payable under the applicable State
+* [20 CFR 615.6 Extended Benefits; weekly amount](20-cfr-615-6.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.6; text in force since 2016-10-24. (a) Total unemployment. (1) The weekly amount of Extended Benefits payable to an individual for a week of total unemployment in the individual's eligibility period shall be the amount of regular compensation payable to the individual for a
+* [20 CFR 615.7 Extended Benefits; maximum amount](20-cfr-615-7.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.7; text in force since 2016-10-24. (a) Individual account. An Extended Benefit Account shall be established for each individual determined to be eligible for Extended Benefits, in the sum of the maximum amount potentially payable to the individual as computed in accordance
+* [20 CFR 615.8 Provisions of State law applicable to claims](20-cfr-615-8.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.8; text in force since 2016-10-24. (a) Particular provisions applicable. Except where the result would be inconsistent with the provisions of EUCA or this part, the terms and conditions of the applicable State law which apply to claims for, and the payment of, regular compe
+* [20 CFR 615.9 Restrictions on entitlement](20-cfr-615-9.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 615.9; text in force since 2016-10-24. (a) Disqualifications. If the week of unemployment for which an individual claims Extended Benefits is a week to which a disqualification for regular compensation applies, including a reduction because of the receipt of disqualifying incom

@@ -1,24 +1,22 @@
----
-type: Index
-title: Index of title-7/part-277
----
+# Index of title-7/part-277
 
+## Documents
 
-- [7 CFR 277.1 General purpose and scope](7-cfr-277-1.md)
-- [7 CFR 277.10 Program income](7-cfr-277-10.md)
-- [7 CFR 277.11 Financial reporting requirements](7-cfr-277-11.md)
-- [7 CFR 277.12 Retention and custody of records](7-cfr-277-12.md)
-- [7 CFR 277.13 Property](7-cfr-277-13.md)
-- [7 CFR 277.14 Procurement standards](7-cfr-277-14.md)
-- [7 CFR 277.16 Suspension, disallowance and program closeout](7-cfr-277-16.md)
-- [7 CFR 277.17 Audit requirements](7-cfr-277-17.md)
-- [7 CFR 277.18 State Systems Advance Planning Document (APD) process](7-cfr-277-18.md)
-- [7 CFR 277.2 Definitions](7-cfr-277-2.md)
-- [7 CFR 277.3 Budgets and budget revision procedures](7-cfr-277-3.md)
-- [7 CFR 277.4 Funding](7-cfr-277-4.md)
-- [7 CFR 277.5 Methods of payment](7-cfr-277-5.md)
-- [7 CFR 277.6 Standards for financial management systems](7-cfr-277-6.md)
-- [7 CFR 277.7 Cash depositories](7-cfr-277-7.md)
-- [7 CFR 277.8 Bonding and insurance](7-cfr-277-8.md)
-- [7 CFR 277.9 Administrative costs principles](7-cfr-277-9.md)
-- [7 CFR Part 277, Appendix A to Part 277 Appendix A to Part 277—Principles for Determining Costs Applicable to Administration of SNAP by State Agencies](7-cfr-appendix-a-to-part-277.md)
+* [7 CFR 277.1 General purpose and scope](7-cfr-277-1.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.1; text in force since 2017-05-08. (a) Purpose. This part establishes uniform requirements for the management of administrative funds provided to State agencies and sets forth principles for claiming costs of activities paid with administrative funds under SNAP, and the Foo
+* [7 CFR 277.10 Program income](7-cfr-277-10.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.10; text in force since 2016-12-22. (a) Program income is gross income resulting from activities financed with program funds. Such earnings exclude interest income but include income from service fees, usage or rental fees, sale of assets purchased with program funds, and ro
+* [7 CFR 277.11 Financial reporting requirements](7-cfr-277-11.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.11; text in force since 2016-12-22. (a) General. This section prescribes requirements for the State agencies to report financial information to FNS. (b) Authorized forms and instructions. (1) Only forms specified by this part, or other forms authorized by FNS, may be used fo
+* [7 CFR 277.12 Retention and custody of records](7-cfr-277-12.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.12; text in force since 2016-12-22. (a) Retention period. All financial records, supporting documents, statistical records, negotiated contracts, and all other records pertinent to program funds shall be maintained for three years from the date of submission of the annual fi
+* [7 CFR 277.13 Property](7-cfr-277-13.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.13; text in force since 2018-04-03. (a) General. This section prescribes policies and procedures governing title, use, disposition of real and personal property for which acquisition costs were borne, in whole or in part, as a direct charge to FNS funds, and ownership rights
+* [7 CFR 277.14 Procurement standards](7-cfr-277-14.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.14; text in force since 2016-12-22. (a) General. This section establishes standards and guidelines for the procurement of supplies, equipment, construction and other services whose cost is borne in whole or in part by FNS program funds. These standards ensure that such mater
+* [7 CFR 277.16 Suspension, disallowance and program closeout](7-cfr-277-16.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.16; text in force since 2017-05-08. (a) Suspension. When a State agency has materially failed to comply with any of the provisions contained in the Act, regulations, or FNS-approved State Plan of Operation, FNS may, after written notification to the State agency, temporarily
+* [7 CFR 277.17 Audit requirements](7-cfr-277-17.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.17; text in force since 2018-04-03. (a) General. This section sets forth the audit requirements for State agencies that receive FNS program funds. Audits shall be conducted on an organization-wide basis. Such audits are to determine whether: (1) Financial operations are cond
+* [7 CFR 277.18 State Systems Advance Planning Document (APD) process](7-cfr-277-18.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.18; text in force since 2016-12-22. (a) Scope and application. This section establishes conditions for initial and continuing authority to claim Federal financial participation (FFP) for the costs of the planning, development, acquisition, installation and implementation of
+* [7 CFR 277.2 Definitions](7-cfr-277-2.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.2; text in force since 2017-05-08. For the purpose of this part the term: Accrued expenditures means the charges incurred by the State agency during a given period for liabilities incurred, benefits received or for goods and services used during this period. Accrued income
+* [7 CFR 277.3 Budgets and budget revision procedures](7-cfr-277-3.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.3; text in force since 2017-05-08. The preparation, content, submittal, and revision requirements for the State SNAP Budget shall be as specified in § 272.2. The application for funds and budget requirements for the Food Distribution Program on Indian Reservations shall be
+* [7 CFR 277.4 Funding](7-cfr-277-4.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.4; text in force since 2017-01-19. (a) General. This section sets allowable cost standards for activities of State agencies in administering the SNAP and Food Distribution Program on Indian Reservations. (b) Federal reimbursement rate. The base percentage for Federal paymen
+* [7 CFR 277.5 Methods of payment](7-cfr-277-5.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.5; text in force since 2016-12-22. (a) This section sets forth FNS methods for authorizing funds for State agencies. (b) The “Letter of Credit” (LOC) (SF-1193A) is the document by which an official of FNS authorizes a State agency to draw funds from the United States Treasu
+* [7 CFR 277.6 Standards for financial management systems](7-cfr-277-6.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.6; text in force since 2016-12-22. (a) General. This section prescribes standards for financial management systems in administering program funds by the State agency and its subagencies or contractors. (b) Responsibilities. Financial management systems for program funds in
+* [7 CFR 277.7 Cash depositories](7-cfr-277-7.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.7; text in force since 2017-05-08. (a) The term “cash depositories” refers to banks or other institutions which maintain accounts where SNAP funds are deposited and from which withdrawals are made to meet administrative costs of the State agency. (b) State agencies are enco
+* [7 CFR 277.8 Bonding and insurance](7-cfr-277-8.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.8; text in force since 2016-12-22. (a) General. In administering FNS program funds, State agencies shall observe their regular requirements and practices with respect to bonding and insurance. FNS will not impose additional bonding and insurance requirements, including fide
+* [7 CFR 277.9 Administrative costs principles](7-cfr-277-9.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 277.9; text in force since 2018-04-03. (a) This section prescribes specific policies and procedures governing State agencies for funding under this part. (b) The incremental cost of certifying TANF households for SNAP benefits are allowable costs for FNS reimbursement. (c) When
+* [7 CFR Part 277, Appendix A to Part 277 Appendix A to Part 277—Principles for Determining Costs Applicable to Administration of SNAP by State Agencies](7-cfr-appendix-a-to-part-277.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR Part 277, Appendix A to Part 277; text in force since 2017-05-08. This appendix sets forth the procedures implementing uniform requirements for the negotiations and approval of cost allocation plans with State agencies, in accordance with the provisions of Federal Management Circular (FMC) 74-4 and OASC-

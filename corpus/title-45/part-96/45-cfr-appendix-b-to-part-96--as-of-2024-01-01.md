@@ -4,7 +4,8 @@ title: "45 CFR Part 96, Appendix B to Part 96 Appendix B to Part 96—SSBG Repor
 description: "LIHEAP and other HHS block grants: 45 CFR Part 96, Appendix B to Part 96; text in force 2016-12-30 to 2026-06-08. Instructions This form must be used by states as the reporting instrument to satisfy the requirements of 45 CFR 96.74(a) (1) through (4). Following are instructions on how to complete the form: General 1. Enter the name of the state submit"
 resource: "https://www.ecfr.gov/on/2024-01-01/title-45/part-96"
 tags: [liheap, energy-assistance, block-grants, title-45, part-96, cfr, regulation]
-timestamp: "2026-10-11T18:08:15Z"
+generated: {by: ecfr-markdown/0.2.0, at: "2016-12-30T00:00:00Z"}
+status: deprecated
 citation: "45 CFR Part 96, Appendix B to Part 96"
 title_number: 45
 part: 96

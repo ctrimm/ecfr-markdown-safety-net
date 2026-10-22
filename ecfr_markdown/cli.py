@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 from .client import Client
-from .export import export_part, front_matter
+from .export import export_part
 
 
 def _unquote(v: str) -> str:
@@ -20,8 +20,13 @@ def _unquote(v: str) -> str:
     return json.loads(v) if len(v) > 1 and v[0] == v[-1] == '"' else v
 
 
+def _fm_value(lines: list[str], key: str) -> str:
+    return next((_unquote(ln[len(key) + 2:].strip()) for ln in lines if ln.startswith(key + ": ")), "")
+
+
 def build_index(root: Path) -> dict:
-    """index.md (type: Index) per directory and a manifest.json of every document."""
+    """index.md per directory in OKF v0.2 form (§8: no frontmatter, except okf_version on the bundle root;
+    entries grouped under headings as `* [Title](link) - description`), plus a manifest.json of every document."""
     manifest = []
     for d in sorted([root, *[p for p in root.rglob("*") if p.is_dir()]]):
         docs = sorted(p for p in d.glob("*.md") if p.name != "index.md")
@@ -29,14 +34,18 @@ def build_index(root: Path) -> dict:
         if not docs and not subs:
             continue
         rel = d.relative_to(root).as_posix()
-        lines = [front_matter({"type": "Index", "title": f"Index of {'corpus' if rel == '.' else rel}"}), ""]
-        lines += [f"- [{s.name}/]({s.name}/index.md)" for s in subs]
+        lines = ["---", 'okf_version: "0.2"', "---", ""] if rel == "." else []  # a string, as the spec writes it
+        lines += [f"# Index of {'corpus' if rel == '.' else rel}", ""]
+        if subs:
+            lines += ["## Directories", ""] + [f"* [{s.name}/]({s.name}/index.md)" for s in subs] + [""]
+        if docs:
+            lines += ["## Documents", ""]
         for p in docs:
-            title = next((_unquote(ln[7:].strip()) for ln in p.read_text(encoding="utf-8").splitlines()[:6]
-                          if ln.startswith("title: ")), p.stem)
-            lines.append(f"- [{title}]({p.name})")
+            head = p.read_text(encoding="utf-8").split("\n---\n", 1)[0].splitlines()
+            title, desc = _fm_value(head, "title") or p.stem, _fm_value(head, "description")
+            lines.append(f"* [{title}]({p.name})" + (f" - {desc}" if desc else ""))
             manifest.append({"path": p.relative_to(root).as_posix(), "title": title})
-        (d / "index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+        (d / "index.md").write_text("\n".join(lines).rstrip("\n") + "\n", encoding="utf-8")
     (root / "manifest.json").write_text(json.dumps(manifest, indent=1), encoding="utf-8")
     return {"documents": len(manifest)}
 

@@ -4,7 +4,7 @@ title: "7 CFR Part 220, Appendix A to Part 220 Appendix A to Part 220—Alternat
 description: "National School Lunch and School Breakfast Programs, free and reduced-price eligibility: 7 CFR Part 220, Appendix A to Part 220; text in force since 2016-12-22. Alternate Protein Products A. What Are the Criteria for Alternate Protein Products Used in the School Breakfast Program? 1. An alternate protein product used in meals planned under the food-based menu planning approaches in § 220.8(g), mus"
 resource: "https://www.ecfr.gov/current/title-7/part-220"
 tags: [school-meals, nutrition, title-7, part-220, cfr, regulation]
-timestamp: "2026-10-11T18:03:58Z"
+generated: {by: ecfr-markdown/0.2.0, at: "2016-12-22T00:00:00Z"}
 citation: "7 CFR Part 220, Appendix A to Part 220"
 title_number: 7
 part: 220

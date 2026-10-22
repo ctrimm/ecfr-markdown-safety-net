@@ -1,25 +1,23 @@
----
-type: Index
-title: Index of title-7/part-272
----
+# Index of title-7/part-272
 
+## Documents
 
-- [7 CFR 272.1 General terms and conditions](7-cfr-272-1.md)
-- [7 CFR 272.10 ADP/CIS Model Plan](7-cfr-272-10.md)
-- [7 CFR 272.11 Systematic Alien Verification for Entitlements (SAVE) Program](7-cfr-272-11.md)
-- [7 CFR 272.12 Computer matching requirements](7-cfr-272-12.md)
-- [7 CFR 272.13 Prisoner verification system (PVS)](7-cfr-272-13.md)
-- [7 CFR 272.14 Deceased matching system](7-cfr-272-14.md)
-- [7 CFR 272.15 Major changes in program design](7-cfr-272-15.md)
-- [7 CFR 272.16 National Directory of New Hires](7-cfr-272-16.md)
-- [7 CFR 272.17 Substantial lottery or gambling winnings](7-cfr-272-17.md)
-- [7 CFR 272.18 National Accuracy Clearinghouse](7-cfr-272-18.md)
-- [7 CFR 272.2 Plan of operation](7-cfr-272-2.md)
-- [7 CFR 272.3 Operating guidelines and forms](7-cfr-272-3.md)
-- [7 CFR 272.4 Program administration and personnel requirements](7-cfr-272-4.md)
-- [7 CFR 272.5 Program informational activities](7-cfr-272-5.md)
-- [7 CFR 272.6 Nondiscrimination compliance (version in force 2024-01-01)](7-cfr-272-6--as-of-2024-01-01.md)
-- [7 CFR 272.6 Nondiscrimination compliance](7-cfr-272-6.md)
-- [7 CFR 272.7 Procedures for program administration in Alaska](7-cfr-272-7.md)
-- [7 CFR 272.8 State income and eligibility verification system](7-cfr-272-8.md)
-- [7 CFR 272.9 Approval of homeless meal providers](7-cfr-272-9.md)
+* [7 CFR 272.1 General terms and conditions](7-cfr-272-1.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.1; text in force since 2022-12-06. (a) Coupons do not reduce benefits. The coupon allotment provided any eligible household shall not be considered income or resources for any purpose under any Federal, State, or local laws including, but not limited to, laws on taxation, w
+* [7 CFR 272.10 ADP/CIS Model Plan](7-cfr-272-10.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.10; text in force since 2017-05-08. (a) General purpose and content —(1) Purpose. All State agencies are required to sufficiently automate their SNAP operations and computerize their systems for obtaining, maintaining, utilizing and transmitting information concerning SNAP.
+* [7 CFR 272.11 Systematic Alien Verification for Entitlements (SAVE) Program](7-cfr-272-11.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.11; text in force since 2019-06-14. (a) General. A State agency shall use an immigration status verification system established under section 1137 of the Social Security Act (42 U.S.C. 1320b-7) to verify the eligible status of all aliens applying for SNAP benefits. USCIS mai
+* [7 CFR 272.12 Computer matching requirements](7-cfr-272-12.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.12; text in force since 2016-12-22. (a) General purpose. The Computer Matching and Privacy Protection Act (CMA) of 1988, as amended, addresses the use of information from computer matching programs that involve a Federal System of Records. Each State agency participating in
+* [7 CFR 272.13 Prisoner verification system (PVS)](7-cfr-272-13.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.13; text in force since 2017-05-08. (a) General. Each State agency shall establish a system to monitor and prevent individuals who are being held in any Federal, State, and/or local detention or correctional institutions for more than 30 days from being included in a SNAP ho
+* [7 CFR 272.14 Deceased matching system](7-cfr-272-14.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.14; text in force since 2017-05-08. (a) General. Each State agency shall establish a system to verify and ensure that benefits are not issued to individuals who are deceased. (b) Data source. States shall use the SSA's Death Master File, obtained through the State Verificati
+* [7 CFR 272.15 Major changes in program design](7-cfr-272-15.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.15; text in force since 2016-12-22. (a) States' reporting of major changes. (1) State agencies shall notify FNS when they make major changes in their operation of SNAP. State agencies shall notify FNS when the plans for the change are approved by State leadership, but no les
+* [7 CFR 272.16 National Directory of New Hires](7-cfr-272-16.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.16; text in force since 2016-12-22. (a) General. Each State agency shall establish a system to verify applicant employment data for the determination of SNAP eligibility and correct benefit amount. (b) Data source. States shall use the U.S. Department of Health and Human Ser
+* [7 CFR 272.17 Substantial lottery or gambling winnings](7-cfr-272-17.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.17; text in force since 2020-07-14. (a) General. Each State agency, to the maximum extent practicable, shall establish cooperative agreements with gaming entities within their State to identify members of certified households who have won substantial lottery or gambling winn
+* [7 CFR 272.18 National Accuracy Clearinghouse](7-cfr-272-18.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.18; text in force since 2022-12-06. (a) General. (1) FNS shall establish an interstate data system, known as the National Accuracy Clearinghouse (NAC) to prevent individuals from receiving SNAP benefits in more than one State in a given month and shall institute processes an
+* [7 CFR 272.2 Plan of operation](7-cfr-272-2.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.2; text in force since 2022-09-19. (a) General purpose and content —(1) Purpose. State agencies shall periodically plan and budget program operations and establish objectives. When planning and budgeting for program operations for the next year, State agencies shall conside
+* [7 CFR 272.3 Operating guidelines and forms](7-cfr-272-3.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.3; text in force since 2017-05-08. (a) Coverage of operating guidelines. State agencies shall prepare and provide to staff responsible for administering the Program written operating procedures. In those States which have State regulations that outline these Operating Proce
+* [7 CFR 272.4 Program administration and personnel requirements](7-cfr-272-4.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.4; text in force since 2017-05-08. (a) Merit personnel. (1) State agency personnel used in the certification process shall be employed in accordance with the current standards for a merit system of personnel administration or any standards later prescribed by the U.S. Civil
+* [7 CFR 272.5 Program informational activities](7-cfr-272-5.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.5; text in force since 2017-01-19. (a) Definition. “Program informational activities” are those activities that convey information about the Program, including household rights and responsibilities, through means such as publications, telephone hotlines, and face-to-face co
+* [7 CFR 272.6 Nondiscrimination compliance (version in force 2024-01-01)](7-cfr-272-6--as-of-2024-01-01.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.6; text in force 2023-12-14 to 2024-02-11. Link to an amendment published at 88 FR 86566, Dec. 14, 2023. (a) Requirement. State agencies shall not discriminate against any applicant or participant in any aspect of program administration, including, but not limited to, the certifica
+* [7 CFR 272.6 Nondiscrimination compliance](7-cfr-272-6.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.6; text in force since 2024-02-12. (a) Requirement. State agencies shall not discriminate against any applicant or participant in any aspect of program administration, including, but not limited to, the certification of households, the issuance of coupons, the conduct of fa
+* [7 CFR 272.7 Procedures for program administration in Alaska](7-cfr-272-7.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.7; text in force since 2017-05-08. (a) Purpose. To achieve the efficient and effective administration of SNAP in rural areas of Alaska, FNS has determined that it is necessary to develop additional regulations which are specifically designed to accommodate the unique demogr
+* [7 CFR 272.8 State income and eligibility verification system](7-cfr-272-8.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.8; text in force since 2019-06-14. (a) General. (1) State agencies shall maintain and use an income and eligibility verification system (IEVS), as specified in this section. By means of the IEVS, State agencies may request wage and benefit information from the agencies iden
+* [7 CFR 272.9 Approval of homeless meal providers](7-cfr-272-9.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 272.9; text in force since 2017-05-08. The State SNAP agency, or another appropriate State or local governmental agency identified by the State SNAP agency, shall approve establishments serving the homeless upon sufficient evidence, as determined by the agency, that the establi

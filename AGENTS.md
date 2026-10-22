@@ -13,9 +13,13 @@ ecfr-markdown exports the eCFR to Markdown: one file per CFR section, YAML front
 - **Dates.** `effective_from` is when a version took effect; `effective_to` is its **last day in force,
   inclusive** (`""` for current text). Versions of a section never overlap, but gaps are real: a section can be
   removed and restored (42 CFR 457.960 was gone 2024-06-03 to 2026-06-02). Reserved sections are skipped.
-- **Re-exports stay diff-clean.** `write_doc()` leaves a file alone when only its `timestamp` would change, and in
-  the nested layout an export owns its part directory (it deletes section files it didn't write). Don't add
-  anything that changes every file on every run.
+- **Output is deterministic.** The weekly sync deletes `corpus/` and re-exports, so a wall-clock time (or the
+  eCFR's daily "up to date as of" date) anywhere in the output would change every file every week. `generated.at`
+  is the version's effective date, not a retrieval time. `test_fresh_exports_are_byte_identical` guards this. In
+  the nested layout an export owns its part directory (it deletes section files it didn't write).
+- **OKF v0.2.** The corpus is an OKF v0.2 bundle (`tests/test_corpus_okf.py` checks it): `type` on every
+  document, `generated: {by, at}` (not the v0.1 `timestamp`), `status: deprecated` on superseded versions, and
+  `index.md` files with no front matter except `okf_version` on the root.
 - **Be polite to the API.** Use `Client`; it pauses between requests and retries with backoff.
 
 ## Checks
@@ -33,8 +37,8 @@ tests never hit the network.
 python3 -m ecfr_markdown catalog programs.json --out corpus/ --since 2024-01-01
 ```
 
-Takes about 45 minutes. Review `git diff --stat corpus` before committing; a real refresh touches a handful of files,
-plus every part's `_part.json`. ctrimm/ecfr-mcp-safety-net builds its indexes from this corpus; rebuild its `data/` after a
+Takes about 45 minutes. Review `git diff --stat corpus` before committing; a real refresh touches only the
+sections that changed upstream (and the indexes listing them). ctrimm/ecfr-mcp-safety-net builds its indexes from this corpus; rebuild its `data/` after a
 refresh.
 
 ## Don'ts

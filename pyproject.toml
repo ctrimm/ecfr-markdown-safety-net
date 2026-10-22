@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ecfr-markdown"
-version = "0.1.0"
+version = "0.2.0"
 description = "Export the Electronic Code of Federal Regulations (eCFR) to Markdown, one file per section, with effective dates and OKF front matter."
 readme = "README.md"
 license = {text = "MIT"}

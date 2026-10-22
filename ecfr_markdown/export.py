@@ -3,23 +3,32 @@
 Output layout (default): <out>/title-<T>/part-<P>/<T>-cfr-<section>.md, plus
 <T>-cfr-<section>--as-of-<date>.md for each earlier version that differs from
 the current text. In the nested layout the part directory belongs to the export:
-section files it did not write this time are removed. Every file opens with YAML front matter (Open Knowledge
-Format v0.1 style: `type` plus title, description, resource, tags,
-timestamp; extensions: citation, title_number, part, subpart,
-effective_from, effective_to, retrieved).
+section files it did not write this time are removed. Every file opens with YAML front matter in the
+Open Knowledge Format (OKF) v0.2: `type` plus title, description, resource, tags, `generated`
+and, for superseded versions, `status: deprecated`; extension keys: citation, title_number, part,
+subpart, effective_from, effective_to.
+
+The output is deterministic: the same eCFR data always produces byte-identical files (no wall-clock
+times), so a fresh re-export only changes what changed upstream.
 """
 from __future__ import annotations
 
 import json
 import re
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, timedelta
 from pathlib import Path
 
+from . import __version__
 from .client import Client
 from .render import Unit, iter_units
 
+# OKF v0.2 actor convention for tools: <producer>/<version>
+PRODUCER = f"ecfr-markdown/{__version__}"
+
 
 def _yaml(v) -> str:
+    if isinstance(v, dict):
+        return "{" + ", ".join(f"{k}: {_yaml(x)}" for k, x in v.items()) + "}"
     if isinstance(v, (list, tuple)):
         return "[" + ", ".join(_yaml(x) for x in v) + "]"
     s = str(v)
@@ -36,14 +45,9 @@ def slug(s: str) -> str:
     return re.sub(r"-{2,}", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")
 
 
-def _same_but_timestamp(a: str, b: str) -> bool:
-    drop = lambda t: [ln for ln in t.splitlines() if not ln.startswith("timestamp: ")]
-    return drop(a) == drop(b)
-
-
 def write_doc(path: Path, text: str) -> None:
-    """Write UTF-8, but leave the file alone when only its timestamp would change (keeps re-exports diff-clean)."""
-    if path.exists() and _same_but_timestamp(path.read_text(encoding="utf-8"), text):
+    """Write UTF-8, leaving an identical file untouched (its mtime too)."""
+    if path.exists() and path.read_text(encoding="utf-8") == text:
         return
     path.write_text(text, encoding="utf-8")
 
@@ -61,7 +65,7 @@ def day_before(d: str) -> str:
 
 
 def unit_doc(u: Unit, title: str, date_from: str, date_to: str, as_of: str | None, program: str = "",
-             tags: tuple = (), retrieved: str = "") -> tuple[str, str]:
+             tags: tuple = ()) -> tuple[str, str]:
     name = re.sub(r"^§+\s*[\w.\-]+\s*", "", u.heading).rstrip(".") if u.kind == "section" else u.heading
     url = (f"https://www.ecfr.gov/on/{as_of}/title-{title}/section-{u.number}" if as_of
            else f"https://www.ecfr.gov/current/title-{title}/section-{u.number}")
@@ -76,7 +80,10 @@ def unit_doc(u: Unit, title: str, date_from: str, date_to: str, as_of: str | Non
                         + (f"; text {span}" if span else "") + f". {lead}").strip(),
         "resource": url,
         "tags": [t for t in [*tags, f"title-{title}", f"part-{u.part}", "cfr", "regulation"] if t],
-        "timestamp": retrieved or datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        # OKF generated.at is the content's last meaningful change: for a CFR version, the day it took effect.
+        # Deterministic, unlike a retrieval time, so unchanged sections re-export byte-identical.
+        "generated": {"by": PRODUCER, **({"at": f"{date_from}T00:00:00Z"} if date_from else {})},
+        "status": "deprecated" if as_of else None,  # OKF: kept for links and history; no longer current
         "citation": u.citation,
         "title_number": title,
         "part": u.part,
@@ -104,10 +111,9 @@ def export_part(client: Client, title: str, part: str, out: Path, current: str |
     d = out / f"title-{title}" / f"part-{part}" if layout == "nested" else out
     d.mkdir(parents=True, exist_ok=True)
     written = []
-    retrieved = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     for n, u in cur.items():
         hist = [x for x in dates.get(n, []) if x <= current]
-        stem, text = unit_doc(u, title, hist[-1] if hist else "", "", None, program, tags, retrieved)
+        stem, text = unit_doc(u, title, hist[-1] if hist else "", "", None, program, tags)
         write_doc(d / f"{stem}.md", text); written.append(d / f"{stem}.md")
     done: set[tuple[str, str]] = set()  # (section, version start) already written
 
@@ -120,7 +126,7 @@ def export_part(client: Client, title: str, part: str, out: Path, current: str |
         if (u.number, frm) in done:
             return
         done.add((u.number, frm))
-        stem, text = unit_doc(u, title, frm, day_before(nxt), when, program, tags, retrieved)
+        stem, text = unit_doc(u, title, frm, day_before(nxt), when, program, tags)
         write_doc(d / f"{stem}.md", text); written.append(d / f"{stem}.md")
 
     query_dates = list(as_of)
@@ -135,7 +141,9 @@ def export_part(client: Client, title: str, part: str, out: Path, current: str |
         for old in d.glob(f"{title}-cfr-*.md"):
             if old not in keep:
                 old.unlink()
-    meta = {"title": title, "part": part, "current": current, "as_of": list(as_of), "since": since, "program": program,
-            "files": len(written), "retrieved": retrieved}
-    (d / "_part.json").write_text(json.dumps(meta, indent=1), encoding="utf-8")
+    # no retrieval time or eCFR "current as of" date here: both change daily, which would make every re-export
+    # differ even when no rule did
+    meta = {"title": title, "part": part, "as_of": list(as_of), "since": since, "program": program,
+            "files": len(written)}
+    write_doc(d / "_part.json", json.dumps(meta, indent=1))
     return written

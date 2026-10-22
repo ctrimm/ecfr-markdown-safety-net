@@ -1,14 +1,12 @@
----
-type: Index
-title: Index of title-7/part-274
----
+# Index of title-7/part-274
 
+## Documents
 
-- [7 CFR 274.1 Issuance system approval standards](7-cfr-274-1.md)
-- [7 CFR 274.2 Providing benefits to participants](7-cfr-274-2.md)
-- [7 CFR 274.3 Retailer management](7-cfr-274-3.md)
-- [7 CFR 274.4 Reconciliation and reporting](7-cfr-274-4.md)
-- [7 CFR 274.5 Record retention and forms security](7-cfr-274-5.md)
-- [7 CFR 274.6 Replacement issuances and cards to households](7-cfr-274-6.md)
-- [7 CFR 274.7 Benefit redemption by eligible households](7-cfr-274-7.md)
-- [7 CFR 274.8 Functional and technical EBT system requirements](7-cfr-274-8.md)
+* [7 CFR 274.1 Issuance system approval standards](7-cfr-274-1.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 274.1; text in force since 2016-12-22. (a) Basic issuance requirements. State agencies shall establish issuance and accountability systems which ensure that only certified eligible households receive benefits; that Program benefits are timely distributed in the correct amounts;
+* [7 CFR 274.2 Providing benefits to participants](7-cfr-274-2.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 274.2; text in force since 2020-09-23. (a) General. Each State agency is responsible for the timely and accurate issuance of benefits to certified eligible households, including EBT system compliance with the expedited service benefit delivery standard and the normal applicatio
+* [7 CFR 274.3 Retailer management](7-cfr-274-3.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 274.3; text in force since 2016-12-22. (a) Retailer participation. (1) All authorized retailers must be afforded the opportunity to participate in the EBT system. An authorized food retailer shall not be required to participate in an EBT system. (i) Retailers who do not have im
+* [7 CFR 274.4 Reconciliation and reporting](7-cfr-274-4.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 274.4; text in force since 2016-12-22. (a) Reconciliation. State agencies shall account for all issuance through a reconciliation process. The EBT system shall provide reports and documentation pertaining to the following: (1) Reconciliation. Reconciliation shall be conducted a
+* [7 CFR 274.5 Record retention and forms security](7-cfr-274-5.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 274.5; text in force since 2016-12-22. (a) Availability of records. (1) The State agency shall maintain issuance, inventory, reconciliation, and other accountability records for a period of three years as specified in § 272.1(f) of this chapter. This period may be extended at t
+* [7 CFR 274.6 Replacement issuances and cards to households](7-cfr-274-6.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 274.6; text in force since 2016-12-22. (a) Providing replacement issuance. (1) Subject to the restrictions in paragraph (a)(3) of this section, State agencies shall provide replacement issuances to a household when the household reports that food purchased with Program benefits
+* [7 CFR 274.7 Benefit redemption by eligible households](7-cfr-274-7.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 274.7; text in force since 2016-12-22. (a) Eligible food. Program benefits may be used only by the household, or other persons the household selects, to purchase eligible food for the household, which includes, for certain households, the purchase of prepared meals, and for oth
+* [7 CFR 274.8 Functional and technical EBT system requirements](7-cfr-274-8.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 274.8; text in force since 2020-09-23. (a) Functional requirements. The State agency shall ensure that the EBT system is capable of performing the following functional requirements prior to implementation: (1) Authorizing household benefits. (i) Issuing and replacing EBT cards
