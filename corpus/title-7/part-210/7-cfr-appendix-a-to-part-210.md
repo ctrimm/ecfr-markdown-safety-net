@@ -4,7 +4,7 @@ title: "7 CFR Part 210, Appendix A to Part 210 Appendix A to Part 210—Alternat
 description: "National School Lunch and School Breakfast Programs, free and reduced-price eligibility: 7 CFR Part 210, Appendix A to Part 210; text in force since 2016-12-22. I. Enriched Macaroni Products with Fortified Protein 1. Schools may utilize the enriched macaroni products with fortified protein defined in paragraph 3 as a food item in meeting the meal requirements of this part under the following terms"
 resource: "https://www.ecfr.gov/current/title-7/part-210"
 tags: [school-meals, nutrition, title-7, part-210, cfr, regulation]
-timestamp: "2026-10-11T18:03:35Z"
+generated: {by: ecfr-markdown/0.2.0, at: "2016-12-22T00:00:00Z"}
 citation: "7 CFR Part 210, Appendix A to Part 210"
 title_number: 7
 part: 210

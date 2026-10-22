@@ -4,7 +4,7 @@ title: "7 CFR Part 226, Appendix A to Part 226 Appendix A to Part 226—Alternat
 description: "Child and Adult Care Food Program: 7 CFR Part 226, Appendix A to Part 226; text in force since 2016-12-22. Alternate Protein Products A. What are the criteria for alternate protein products used in the Child and Adult Care Food Program? 1. An alternate protein product used in meals planned under the provisions in § 226.20 must meet all of the c"
 resource: "https://www.ecfr.gov/current/title-7/part-226"
 tags: [cacfp, nutrition, title-7, part-226, cfr, regulation]
-timestamp: "2026-10-11T18:05:10Z"
+generated: {by: ecfr-markdown/0.2.0, at: "2016-12-22T00:00:00Z"}
 citation: "7 CFR Part 226, Appendix A to Part 226"
 title_number: 7
 part: 226

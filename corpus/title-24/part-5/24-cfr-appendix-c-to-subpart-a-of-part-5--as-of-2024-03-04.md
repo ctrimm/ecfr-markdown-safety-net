@@ -4,7 +4,8 @@ title: "24 CFR Part 5, Appendix C to Subpart A of Part 5 Appendix C to Subpart A
 description: "Housing Choice Vouchers and HUD income rules: 24 CFR Part 5, Appendix C to Subpart A of Part 5 (Subpart A—Generally Applicable Definitions and Requirements; Waivers); text in force 2024-03-04 to 2024-04-02. Link to an amendment published at 89 FR 15713, Mar. 4, 2024."
 resource: "https://www.ecfr.gov/on/2024-03-04/title-24/part-5"
 tags: [housing, section-8, title-24, part-5, cfr, regulation]
-timestamp: "2026-10-11T18:12:57Z"
+generated: {by: ecfr-markdown/0.2.0, at: "2024-03-04T00:00:00Z"}
+status: deprecated
 citation: "24 CFR Part 5, Appendix C to Subpart A of Part 5"
 title_number: 24
 part: 5

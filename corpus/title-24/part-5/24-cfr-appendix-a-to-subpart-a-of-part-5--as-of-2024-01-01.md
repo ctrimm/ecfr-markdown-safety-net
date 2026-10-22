@@ -4,7 +4,8 @@ title: "24 CFR Part 5, Appendix A to Subpart A of Part 5 Appendix A to Subpart A
 description: "Housing Choice Vouchers and HUD income rules: 24 CFR Part 5, Appendix A to Subpart A of Part 5 (Subpart A—Generally Applicable Definitions and Requirements; Waivers); text in force 2021-01-19 to 2024-03-03. (a) Faith-based organizations may apply for this award on the same basis as any other organization, as set forth at, and subject to the protections and requirements of 42 U.S.C. 2000bb et seq., HUD will not, in the selection of recipients,"
 resource: "https://www.ecfr.gov/on/2024-01-01/title-24/part-5"
 tags: [housing, section-8, title-24, part-5, cfr, regulation]
-timestamp: "2026-10-11T18:12:57Z"
+generated: {by: ecfr-markdown/0.2.0, at: "2021-01-19T00:00:00Z"}
+status: deprecated
 citation: "24 CFR Part 5, Appendix A to Subpart A of Part 5"
 title_number: 24
 part: 5

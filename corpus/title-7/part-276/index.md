@@ -1,13 +1,11 @@
----
-type: Index
-title: Index of title-7/part-276
----
+# Index of title-7/part-276
 
+## Documents
 
-- [7 CFR 276.1 Responsibilities and rights](7-cfr-276-1.md)
-- [7 CFR 276.2 State agency liabilities](7-cfr-276-2.md)
-- [7 CFR 276.3 Negligence or fraud](7-cfr-276-3.md)
-- [7 CFR 276.4 Suspension/disallowance of administrative funds](7-cfr-276-4.md)
-- [7 CFR 276.5 Injunctive relief](7-cfr-276-5.md)
-- [7 CFR 276.6 Good cause](7-cfr-276-6.md)
-- [7 CFR 276.7 Administrative review process](7-cfr-276-7.md)
+* [7 CFR 276.1 Responsibilities and rights](7-cfr-276-1.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 276.1; text in force since 2016-12-22. (a) Responsibilities. (1) State agencies shall be responsible for establishing and maintaining secure control over coupons and cash for which the regulations designate them accountable. Except as otherwise provided in these regulations, an
+* [7 CFR 276.2 State agency liabilities](7-cfr-276-2.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 276.2; text in force since 2016-12-22. (a) General provisions. Notwithstanding any other provision of this subchapter, State agencies shall be responsible to FNS for any financial losses involved in the acceptance, storage and issuance of coupons. All coupon issuance shall be d
+* [7 CFR 276.3 Negligence or fraud](7-cfr-276-3.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 276.3; text in force since 2017-05-08. (a) General. If FNS determines that there has been negligence or fraud on the part of the State agency in the certification of applicant households, the State agency shall, upon demand, pay to FNS a sum equal to the amount of coupons issue
+* [7 CFR 276.4 Suspension/disallowance of administrative funds](7-cfr-276-4.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 276.4; text in force since 2017-05-08. (a) General provisions. (1) FNS shall make determinations of the efficiency and effectiveness of State agencies' administration of SNAP in accordance with the provisions of § 275.25. When making such determinations, FNS shall use all infor
+* [7 CFR 276.5 Injunctive relief](7-cfr-276-5.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 276.5; text in force since 2017-05-08. (a) General. If FNS determines that a State agency has failed to comply with the Food and Nutrition Act of 2008, the regulations issued pursuant to the Act, or the FNS-approved State Plan of Operations, the Secretary may seek injunctive re
+* [7 CFR 276.6 Good cause](7-cfr-276-6.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 276.6; text in force since 2017-05-08. (a) When a State agency has failed to comply with provisions of the Act, the regulations issued pursuant to the Act, or the FNS-approved State Plan of Operation, and, thus, is subject to the suspension/disallowance and injunctive relief pr
+* [7 CFR 276.7 Administrative review process](7-cfr-276-7.md) - Supplemental Nutrition Assistance Program (SNAP): 7 CFR 276.7; text in force since 2017-05-08. (a) General. (1) Whenever FNS asserts a claim against a State agency, the State agency may appeal the claim by requesting an administrative review. FNS claims that may be appealed are billings resulting from financial losses involved in th

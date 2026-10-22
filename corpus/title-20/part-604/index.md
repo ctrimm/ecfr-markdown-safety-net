@@ -1,12 +1,10 @@
----
-type: Index
-title: Index of title-20/part-604
----
+# Index of title-20/part-604
 
+## Documents
 
-- [20 CFR 604.1 Purpose and scope](20-cfr-604-1.md)
-- [20 CFR 604.2 Definitions](20-cfr-604-2.md)
-- [20 CFR 604.3 Able and available requirement—general principles](20-cfr-604-3.md)
-- [20 CFR 604.4 Application—ability to work](20-cfr-604-4.md)
-- [20 CFR 604.5 Application—availability for work](20-cfr-604-5.md)
-- [20 CFR 604.6 Conformity and substantial compliance](20-cfr-604-6.md)
+* [20 CFR 604.1 Purpose and scope](20-cfr-604-1.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 604.1; text in force since 2016-10-24. The purpose of this Part is to implement the requirements of Federal UC law that limit a State's payment of UC to individuals who are able to work and available for work. This regulation applies to all State UC laws and programs.
+* [20 CFR 604.2 Definitions](20-cfr-604-2.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 604.2; text in force since 2016-10-24. (a) Department means the United States Department of Labor. (b) FUTA means the Federal Unemployment Tax Act, 26 U.S.C. 3301 et seq. (c) Social Security Act means the Social Security Act, 42 U.S.C. 501 et seq. (d) State means a State of the
+* [20 CFR 604.3 Able and available requirement—general principles](20-cfr-604-3.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 604.3; text in force since 2016-10-24. (a) A State may pay UC only to an individual who is able to work and available for work for the week for which UC is claimed. (b) Whether an individual is able to work and available for work under paragraph (a) of this section must be test
+* [20 CFR 604.4 Application—ability to work](20-cfr-604-4.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 604.4; text in force since 2016-10-24. (a) A State may consider an individual to be able to work during the week of unemployment claimed if the individual is able to work for all or a portion of the week claimed, provided any limitation on his or her ability to work does not co
+* [20 CFR 604.5 Application—availability for work](20-cfr-604-5.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 604.5; text in force since 2016-10-24. (a) General application. A State may consider an individual to be available for work during the week of unemployment claimed under any of the following circumstances: (1) The individual is available for any work for all or a portion of the
+* [20 CFR 604.6 Conformity and substantial compliance](20-cfr-604-6.md) - Unemployment compensation (federal-state UI requirements): 20 CFR 604.6; text in force since 2016-10-24. (a) In general. A State's UC law must conform with, and the administration of its law must substantially comply with, the requirements of this regulation for purposes of certification under: (1) Section 3304(c) of the FUTA (26 U.S.C. 3304(

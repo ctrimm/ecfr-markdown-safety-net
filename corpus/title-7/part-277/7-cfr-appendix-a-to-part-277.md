@@ -4,7 +4,7 @@ title: "7 CFR Part 277, Appendix A to Part 277 Appendix A to Part 277—Principl
 description: "Supplemental Nutrition Assistance Program (SNAP): 7 CFR Part 277, Appendix A to Part 277; text in force since 2017-05-08. This appendix sets forth the procedures implementing uniform requirements for the negotiations and approval of cost allocation plans with State agencies, in accordance with the provisions of Federal Management Circular (FMC) 74-4 and OASC-"
 resource: "https://www.ecfr.gov/current/title-7/part-277"
 tags: [snap, nutrition, title-7, part-277, cfr, regulation]
-timestamp: "2026-10-11T18:03:11Z"
+generated: {by: ecfr-markdown/0.2.0, at: "2017-05-08T00:00:00Z"}
 citation: "7 CFR Part 277, Appendix A to Part 277"
 title_number: 7
 part: 277

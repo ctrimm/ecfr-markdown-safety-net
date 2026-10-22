@@ -4,7 +4,7 @@ title: "7 CFR Part 226, Appendix C to Part 226 Appendix C to Part 226—Child Nu
 description: "Child and Adult Care Food Program: 7 CFR Part 226, Appendix C to Part 226; text in force since 2016-12-22. 1. The Child Nutrition (CN) Labeling Program is a voluntary technical assistance program administered by the Food and Nutrition Service (FNS) in conjunction with the Food Safety and Inspection Service (FSIS), and Agricultural Marketing Ser"
 resource: "https://www.ecfr.gov/current/title-7/part-226"
 tags: [cacfp, nutrition, title-7, part-226, cfr, regulation]
-timestamp: "2026-10-11T18:05:10Z"
+generated: {by: ecfr-markdown/0.2.0, at: "2016-12-22T00:00:00Z"}
 citation: "7 CFR Part 226, Appendix C to Part 226"
 title_number: 7
 part: 226
