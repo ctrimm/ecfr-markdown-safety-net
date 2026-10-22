@@ -1,0 +1,32 @@
+name: Notify ecfr-mcp of corpus changes
+
+# A push to main that touches corpus/ (normally a merged weekly-sync PR) tells
+# ctrimm/ecfr-mcp to rebuild its data/ and open a review PR there.
+# Requires the DISPATCH_TOKEN secret: a fine-grained PAT for ctrimm/ecfr-mcp
+# with Contents read and write. Without it this workflow succeeds quietly and
+# prints instructions instead of failing.
+
+on:
+  push:
+    branches: [main]
+    paths: ["corpus/**"]
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send repository_dispatch to ctrimm/ecfr-mcp
+        env:
+          DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$DISPATCH_TOKEN" ]; then
+            echo "DISPATCH_TOKEN secret is not set; skipping the ecfr-mcp rebuild notification."
+            echo "To enable it: create a fine-grained PAT (repo: ctrimm/ecfr-mcp only, Contents: read and write) and save it in this repo under Settings > Secrets and variables > Actions as DISPATCH_TOKEN."
+            exit 0
+          fi
+          curl -sS -f -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $DISPATCH_TOKEN" \
+            https://api.github.com/repos/ctrimm/ecfr-mcp/dispatches \
+            -d "{\"event_type\": \"corpus-updated\", \"client_payload\": {\"ecfr_markdown_sha\": \"$GITHUB_SHA\"}}"
+          echo "Dispatched corpus-updated for $GITHUB_SHA"
