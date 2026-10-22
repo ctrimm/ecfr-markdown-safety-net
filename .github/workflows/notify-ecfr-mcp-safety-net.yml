@@ -7,6 +7,7 @@ name: Notify ecfr-mcp-safety-net of corpus changes
 # prints instructions instead of failing.
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths: ["corpus/**"]
@@ -15,12 +16,12 @@ jobs:
   dispatch:
     runs-on: ubuntu-latest
     steps:
-      - name: Send repository_dispatch to ctrimm/ecfr-mcp
+      - name: Send repository_dispatch to ctrimm/ecfr-mcp-safety-net
         env:
           DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
         run: |
           if [ -z "$DISPATCH_TOKEN" ]; then
-            echo "DISPATCH_TOKEN secret is not set; skipping the ecfr-mcp rebuild notification."
+            echo "DISPATCH_TOKEN secret is not set; skipping the ecfr-mcp-safety-net rebuild notification."
             echo "To enable it: create a fine-grained PAT (repo: ctrimm/ecfr-mcp-safety-net only, Contents: read and write) and save it in this repo under Settings > Secrets and variables > Actions as DISPATCH_TOKEN."
             exit 0
           fi
