@@ -1,4 +1,4 @@
-# ecfr-markdown
+# ecfr-markdown-safety-net
 
 The **Electronic Code of Federal Regulations as Markdown**: one file per section, with effective dates, in a format both people and AI agents can read.
 
