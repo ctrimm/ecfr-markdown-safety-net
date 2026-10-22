@@ -34,7 +34,7 @@ python3 -m ecfr_markdown catalog programs.json --out corpus/ --since 2024-01-01
 ```
 
 Takes about 45 minutes. Review `git diff --stat corpus` before committing; a real refresh touches a handful of files,
-plus every part's `_part.json`. ctrimm/ecfr-mcp builds its indexes from this corpus; rebuild its `data/` after a
+plus every part's `_part.json`. ctrimm/ecfr-mcp-safety-net builds its indexes from this corpus; rebuild its `data/` after a
 refresh.
 
 ## Don'ts
