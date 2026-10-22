@@ -13,7 +13,7 @@ import urllib.parse
 import urllib.request
 
 API = "https://www.ecfr.gov/api/versioner/v1"
-DEFAULT_UA = "ecfr-markdown (https://github.com/ctrimm/ecfr-markdown)"
+DEFAULT_UA = "ecfr-markdown-safety-net (https://github.com/ctrimm/ecfr-markdown-safety-net)"
 
 
 class Client:
