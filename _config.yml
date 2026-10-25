@@ -7,4 +7,3 @@ exclude:
   - ecfr_markdown
   - tests
   - tools
-  - feed
