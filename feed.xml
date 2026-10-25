@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>ecfr-markdown-safety-net - corpus changes</title>
+    <link>https://github.com/ctrimm/ecfr-markdown-safety-net</link>
+    <description>Changes to the safety-net slice of the eCFR as Markdown: one item per CFR section file added, modified or deleted on main. 15 programs, 35 CFR parts. A convenience copy, not the official legal edition - cite the official CFR or the Federal Register for legal purposes.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://raw.githubusercontent.com/ctrimm/ecfr-markdown-safety-net/main/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Change feed launched - corpus baseline</title>
+      <link>https://github.com/ctrimm/ecfr-markdown-safety-net</link>
+      <guid isPermaLink="false">urn:ecfr-markdown-safety-net:feed-launched-2026-10-24</guid>
+      <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+      <description>RSS change feed launched for the ecfr-markdown-safety-net corpus. Baseline at launch: 15 programs, 35 CFR parts in 6 titles, 2,278 current section files plus 1,029 historical version files (3,349 Markdown files under corpus/), matching the v1.0.0 state of 2026-10-22. From now on, every corpus change merged to main adds one feed item per changed section: citation, change type, date, and links to the file on GitHub and the official text on eCFR.gov.</description>
+      <category>feed-launched</category>
+    </item>
+  </channel>
+</rss>

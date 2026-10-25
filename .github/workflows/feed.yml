@@ -1,0 +1,65 @@
+name: Corpus change feed
+
+# After corpus changes land on main, record them in feed/changes.jsonl and
+# regenerate feed.xml (RSS 2.0), committing both back to main. The commit
+# only touches feed.xml and feed/changes.jsonl - never corpus/ - so it
+# cannot retrigger this workflow; the [skip ci] marker and the actor guard
+# below are belt and braces.
+#
+# Feed URL: https://raw.githubusercontent.com/ctrimm/ecfr-markdown-safety-net/main/feed.xml
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "corpus/**"
+  workflow_dispatch:
+    inputs:
+      before:
+        description: "Base commit SHA (default: current HEAD - feed rebuild only)"
+        required: false
+      after:
+        description: "Head commit SHA (default: current HEAD)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: corpus-change-feed
+  cancel-in-progress: false
+
+jobs:
+  feed:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Record changes and rebuild feed.xml
+        env:
+          BEFORE_SHA: ${{ github.event.before || inputs.before || github.sha }}
+          AFTER_SHA: ${{ github.event.after || inputs.after || github.sha }}
+        run: |
+          python3 tools/build_feed.py record \
+            --before "$BEFORE_SHA" \
+            --after "$AFTER_SHA"
+
+      - name: Commit feed updates
+        run: |
+          git config user.name "Cory Trimm"
+          git config user.email "cory.trimm@gmail.com"
+          git add feed.xml feed/changes.jsonl
+          if git diff --cached --quiet; then
+            echo "Feed unchanged; nothing to commit."
+            exit 0
+          fi
+          git commit -m "Update corpus change feed [skip ci]"
+          git push

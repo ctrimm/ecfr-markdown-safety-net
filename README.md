@@ -71,6 +71,23 @@ for unit in iter_units(xml, 7):
     print(unit.citation, unit.heading, len(unit.markdown))
 ```
 
+## Change feed (RSS)
+
+Every corpus change that lands on `main` is published to an RSS 2.0 feed:
+
+**Feed URL:** https://raw.githubusercontent.com/ctrimm/ecfr-markdown-safety-net/main/feed.xml
+
+(Also served via GitHub Pages at https://ctrimm.github.io/ecfr-markdown-safety-net/feed.xml - same file, same content.)
+
+One item per changed section file: the citation (for example `7 CFR 273.9`), whether the file was added, modified or deleted, the date, and links to the file on GitHub and to the official section page on eCFR.gov. Historical `--as-of-` version files are included; index files are not. The feed carries the newest 200 changes, and the full append-only history lives in [`feed/changes.jsonl`](feed/changes.jsonl).
+
+A GitHub Actions workflow (`.github/workflows/feed.yml`) does this automatically after each push to `main` that touches `corpus/`: it diffs the push, records the changed sections with `tools/build_feed.py`, regenerates `feed.xml`, and commits both files back. To record a range by hand:
+
+```bash
+python3 tools/build_feed.py record --before <sha> --after <sha>
+python3 tools/build_feed.py build   # regenerate feed.xml from the log alone
+```
+
 ## What's rendered
 
 Paragraphs (with italics), subheadings, both of the eCFR's table formats (as Markdown tables), extracts and notes (as block quotes), source citations, editorial notes and footnotes. Formulas and images that have no text form are replaced by a note pointing to the official source. Reserved sections are skipped. Appendices become their own files.
