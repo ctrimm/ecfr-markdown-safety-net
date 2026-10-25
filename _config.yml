@@ -1,0 +1,10 @@
+# GitHub Pages publishes this repo only so feed.xml gets a stable,
+# friendly URL: https://ctrimm.github.io/ecfr-markdown-safety-net/feed.xml
+# Exclude the corpus and the code so Jekyll does not try to render the
+# 3,300+ corpus Markdown files - the feed is a static file at the root.
+exclude:
+  - corpus
+  - ecfr_markdown
+  - tests
+  - tools
+  - feed
