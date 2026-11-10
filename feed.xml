@@ -5,8 +5,107 @@
     <link>https://github.com/ctrimm/ecfr-markdown-safety-net</link>
     <description>Changes to the safety-net slice of the eCFR as Markdown: one item per CFR section file added, modified or deleted on main. 15 programs, 35 CFR parts. A convenience copy, not the official legal edition - cite the official CFR or the Federal Register for legal purposes.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 20:32:26 +0000</lastBuildDate>
     <atom:link href="https://raw.githubusercontent.com/ctrimm/ecfr-markdown-safety-net/main/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>7 CFR 246.7 Certification of participants - modified</title>
+      <link>https://github.com/ctrimm/ecfr-markdown-safety-net/blob/main/corpus/title-7/part-246/7-cfr-246-7.md</link>
+      <guid isPermaLink="false">urn:ecfr-markdown-safety-net:corpus/title-7/part-246/7-cfr-246-7.md@2026-11-10T15:32:26-05:00#modified</guid>
+      <pubDate>Tue, 10 Nov 2026 20:32:26 +0000</pubDate>
+      <description>7 CFR 246.7 was modified in the corpus. Section heading: Certification of participants. Title 7, Part 246, Section 7. Text in force since 2026-11-06. File: corpus/title-7/part-246/7-cfr-246-7.md Official text: https://www.ecfr.gov/current/title-7/section-246.7</description>
+      <category>modified</category>
+      <category>Title 7 Part 246</category>
+    </item>
+    <item>
+      <title>7 CFR 246.7 Certification of participants (version in force 2024-06-17) - added</title>
+      <link>https://github.com/ctrimm/ecfr-markdown-safety-net/blob/main/corpus/title-7/part-246/7-cfr-246-7--as-of-2024-06-17.md</link>
+      <guid isPermaLink="false">urn:ecfr-markdown-safety-net:corpus/title-7/part-246/7-cfr-246-7--as-of-2024-06-17.md@2026-11-10T15:32:26-05:00#added</guid>
+      <pubDate>Tue, 10 Nov 2026 20:32:26 +0000</pubDate>
+      <description>7 CFR 246.7 was added in the corpus. Section heading: Certification of participants (version in force 2024-06-17). Title 7, Part 246, Section 7. This file is the historical version in force from 2024-06-17. In force until 2026-11-05. File: corpus/title-7/part-246/7-cfr-246-7--as-of-2024-06-17.md Official text: https://www.ecfr.gov/on/2024-06-17/title-7/section-246.7</description>
+      <category>added</category>
+      <category>Title 7 Part 246</category>
+    </item>
+    <item>
+      <title>7 CFR 246.4 State plan - modified</title>
+      <link>https://github.com/ctrimm/ecfr-markdown-safety-net/blob/main/corpus/title-7/part-246/7-cfr-246-4.md</link>
+      <guid isPermaLink="false">urn:ecfr-markdown-safety-net:corpus/title-7/part-246/7-cfr-246-4.md@2026-11-10T15:32:26-05:00#modified</guid>
+      <pubDate>Tue, 10 Nov 2026 20:32:26 +0000</pubDate>
+      <description>7 CFR 246.4 was modified in the corpus. Section heading: State plan. Title 7, Part 246, Section 4. Text in force since 2026-11-06. File: corpus/title-7/part-246/7-cfr-246-4.md Official text: https://www.ecfr.gov/current/title-7/section-246.4</description>
+      <category>modified</category>
+      <category>Title 7 Part 246</category>
+    </item>
+    <item>
+      <title>7 CFR 246.4 State plan (version in force 2025-12-17) - added</title>
+      <link>https://github.com/ctrimm/ecfr-markdown-safety-net/blob/main/corpus/title-7/part-246/7-cfr-246-4--as-of-2025-12-17.md</link>
+      <guid isPermaLink="false">urn:ecfr-markdown-safety-net:corpus/title-7/part-246/7-cfr-246-4--as-of-2025-12-17.md@2026-11-10T15:32:26-05:00#added</guid>
+      <pubDate>Tue, 10 Nov 2026 20:32:26 +0000</pubDate>
+      <description>7 CFR 246.4 was added in the corpus. Section heading: State plan (version in force 2025-12-17). Title 7, Part 246, Section 4. This file is the historical version in force from 2025-12-17. In force until 2026-11-05. File: corpus/title-7/part-246/7-cfr-246-4--as-of-2025-12-17.md Official text: https://www.ecfr.gov/on/2025-12-17/title-7/section-246.4</description>
+      <category>added</category>
+      <category>Title 7 Part 246</category>
+    </item>
+    <item>
+      <title>7 CFR 246.2 Definitions - modified</title>
+      <link>https://github.com/ctrimm/ecfr-markdown-safety-net/blob/main/corpus/title-7/part-246/7-cfr-246-2.md</link>
+      <guid isPermaLink="false">urn:ecfr-markdown-safety-net:corpus/title-7/part-246/7-cfr-246-2.md@2026-11-10T15:32:26-05:00#modified</guid>
+      <pubDate>Tue, 10 Nov 2026 20:32:26 +0000</pubDate>
+      <description>7 CFR 246.2 was modified in the corpus. Section heading: Definitions. Title 7, Part 246, Section 2. Text in force since 2026-11-06. File: corpus/title-7/part-246/7-cfr-246-2.md Official text: https://www.ecfr.gov/current/title-7/section-246.2</description>
+      <category>modified</category>
+      <category>Title 7 Part 246</category>
+    </item>
+    <item>
+      <title>7 CFR 246.2 Definitions (version in force 2025-12-17) - added</title>
+      <link>https://github.com/ctrimm/ecfr-markdown-safety-net/blob/main/corpus/title-7/part-246/7-cfr-246-2--as-of-2025-12-17.md</link>
+      <guid isPermaLink="false">urn:ecfr-markdown-safety-net:corpus/title-7/part-246/7-cfr-246-2--as-of-2025-12-17.md@2026-11-10T15:32:26-05:00#added</guid>
+      <pubDate>Tue, 10 Nov 2026 20:32:26 +0000</pubDate>
+      <description>7 CFR 246.2 was added in the corpus. Section heading: Definitions (version in force 2025-12-17). Title 7, Part 246, Section 2. This file is the historical version in force from 2025-12-17. In force until 2026-11-05. File: corpus/title-7/part-246/7-cfr-246-2--as-of-2025-12-17.md Official text: https://www.ecfr.gov/on/2025-12-17/title-7/section-246.2</description>
+      <category>added</category>
+      <category>Title 7 Part 246</category>
+    </item>
+    <item>
+      <title>7 CFR 246.14 Program costs - modified</title>
+      <link>https://github.com/ctrimm/ecfr-markdown-safety-net/blob/main/corpus/title-7/part-246/7-cfr-246-14.md</link>
+      <guid isPermaLink="false">urn:ecfr-markdown-safety-net:corpus/title-7/part-246/7-cfr-246-14.md@2026-11-10T15:32:26-05:00#modified</guid>
+      <pubDate>Tue, 10 Nov 2026 20:32:26 +0000</pubDate>
+      <description>7 CFR 246.14 was modified in the corpus. Section heading: Program costs. Title 7, Part 246, Section 14. Text in force since 2026-11-06. File: corpus/title-7/part-246/7-cfr-246-14.md Official text: https://www.ecfr.gov/current/title-7/section-246.14</description>
+      <category>modified</category>
+      <category>Title 7 Part 246</category>
+    </item>
+    <item>
+      <title>7 CFR 246.14 Program costs (version in force 2024-01-01) - added</title>
+      <link>https://github.com/ctrimm/ecfr-markdown-safety-net/blob/main/corpus/title-7/part-246/7-cfr-246-14--as-of-2024-01-01.md</link>
+      <guid isPermaLink="false">urn:ecfr-markdown-safety-net:corpus/title-7/part-246/7-cfr-246-14--as-of-2024-01-01.md@2026-11-10T15:32:26-05:00#added</guid>
+      <pubDate>Tue, 10 Nov 2026 20:32:26 +0000</pubDate>
+      <description>7 CFR 246.14 was added in the corpus. Section heading: Program costs (version in force 2024-01-01). Title 7, Part 246, Section 14. This file is the historical version in force from 2024-01-01. In force until 2026-11-05. File: corpus/title-7/part-246/7-cfr-246-14--as-of-2024-01-01.md Official text: https://www.ecfr.gov/on/2024-01-01/title-7/section-246.14</description>
+      <category>added</category>
+      <category>Title 7 Part 246</category>
+    </item>
+    <item>
+      <title>7 CFR 246.12 Food delivery methods - modified</title>
+      <link>https://github.com/ctrimm/ecfr-markdown-safety-net/blob/main/corpus/title-7/part-246/7-cfr-246-12.md</link>
+      <guid isPermaLink="false">urn:ecfr-markdown-safety-net:corpus/title-7/part-246/7-cfr-246-12.md@2026-11-10T15:32:26-05:00#modified</guid>
+      <pubDate>Tue, 10 Nov 2026 20:32:26 +0000</pubDate>
+      <description>7 CFR 246.12 was modified in the corpus. Section heading: Food delivery methods. Title 7, Part 246, Section 12. Text in force since 2026-11-06. File: corpus/title-7/part-246/7-cfr-246-12.md Official text: https://www.ecfr.gov/current/title-7/section-246.12</description>
+      <category>modified</category>
+      <category>Title 7 Part 246</category>
+    </item>
+    <item>
+      <title>7 CFR 246.12 Food delivery methods (version in force 2024-06-17) - added</title>
+      <link>https://github.com/ctrimm/ecfr-markdown-safety-net/blob/main/corpus/title-7/part-246/7-cfr-246-12--as-of-2024-06-17.md</link>
+      <guid isPermaLink="false">urn:ecfr-markdown-safety-net:corpus/title-7/part-246/7-cfr-246-12--as-of-2024-06-17.md@2026-11-10T15:32:26-05:00#added</guid>
+      <pubDate>Tue, 10 Nov 2026 20:32:26 +0000</pubDate>
+      <description>7 CFR 246.12 was added in the corpus. Section heading: Food delivery methods (version in force 2024-06-17). Title 7, Part 246, Section 12. This file is the historical version in force from 2024-06-17. In force until 2026-11-05. File: corpus/title-7/part-246/7-cfr-246-12--as-of-2024-06-17.md Official text: https://www.ecfr.gov/on/2024-06-17/title-7/section-246.12</description>
+      <category>added</category>
+      <category>Title 7 Part 246</category>
+    </item>
+    <item>
+      <title>45 CFR 98.81 Application and Plan procedures - modified</title>
+      <link>https://github.com/ctrimm/ecfr-markdown-safety-net/blob/main/corpus/title-45/part-98/45-cfr-98-81.md</link>
+      <guid isPermaLink="false">urn:ecfr-markdown-safety-net:corpus/title-45/part-98/45-cfr-98-81.md@2026-11-10T15:32:26-05:00#modified</guid>
+      <pubDate>Tue, 10 Nov 2026 20:32:26 +0000</pubDate>
+      <description>45 CFR 98.81 was modified in the corpus. Section heading: Application and Plan procedures. Title 45, Part 98, Section 81. Text in force since 2026-07-13. File: corpus/title-45/part-98/45-cfr-98-81.md Official text: https://www.ecfr.gov/current/title-45/section-98.81</description>
+      <category>modified</category>
+      <category>Title 45 Part 98</category>
+    </item>
     <item>
       <title>Change feed launched - corpus baseline</title>
       <link>https://github.com/ctrimm/ecfr-markdown-safety-net</link>
